@@ -44,7 +44,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="{{route('logout')}}">
                         <i class="iconsmind-Aim"></i> Выход
                     </a>
                 </li>
