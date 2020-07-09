@@ -19,3 +19,7 @@ Route::get('/', function () {
 Route::get('/0.0.0.0', function (){
     return view('backend.login');
 });
+
+Route::group(['middleware' => 'Admin', 'namespace' => 'Admin', 'prefix' => 'admin'], function (){
+    Route::get('/', function (){return view('backend.dashboard');})->name('admin');
+});

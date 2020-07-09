@@ -26,7 +26,7 @@ class Login extends Component
         ]);
 
         if(Auth::attempt(['login' => $this->login, 'password' => $this->password])){
-            return redirect()->route('landlord');
+            return redirect()->route('admin');
         }
         else{
             session()->flash("message","Неправильный логин или пароль");
