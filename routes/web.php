@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('main');
 Route::get('/0.0.0.0', function (){
     return view('backend.login');
 });
@@ -23,3 +23,8 @@ Route::get('/0.0.0.0', function (){
 Route::group(['middleware' => 'Admin', 'namespace' => 'Admin', 'prefix' => 'admin'], function (){
     Route::get('/', function (){return view('backend.dashboard');})->name('admin');
 });
+
+Route::get('/logout', function (){
+   \Illuminate\Support\Facades\Auth::logout();
+   return redirect()->route('main');
+})->name('logout');
