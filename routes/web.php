@@ -29,6 +29,7 @@ Route::get("news-detail/{slug}","FrontendController@news_detail");
 
 Route::group(['middleware' => 'Admin', 'namespace' => 'Admin', 'prefix' => 'admin'], function (){
     Route::get('/', function (){return view('backend.dashboard');})->name('admin');
+    Route::get("/teams","BackendController@teams")->name("backend-teams");
 });
 
 
