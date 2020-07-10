@@ -33,7 +33,7 @@
                                 <li>{{$item->created_at->diffForHumans()}}</li>
                                 <li>>Игровые</li>
                             </ul>
-                            <h3><a href="news-detail/{{$item->slug}}">{{$item->title}}</a></h3>
+                            <h3><a href="news-detail/{{$item->slug}}">{{substr($item->title, 0, 50)}}. . .</a></h3>
                             <a href="news-detail/{{$item->slug}}" class="read-more-btn">Читать далее <i class="flaticon-null"></i></a>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
                     @endforeach
                     <div class="col-lg-12 col-md-12">
                         <div class="pagination-area text-center">
-                          {{$news->links()}}
+                          {{$news->links('vendor.pagination.cybersport')}}
                         </div>
                     </div>
 
