@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.home');
 })->name('main');
 Route::get('/0.0.0.0', function (){
     return view('backend.login');
