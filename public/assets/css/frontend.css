@@ -44,7 +44,7 @@ Flaticon icon font: Flaticon
 	}
 }
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
 	font-family: Flaticon;
 	font-style: normal;
 }
@@ -170,7 +170,7 @@ Default CSS
   --mainColor: #fc0820;
   --whiteColor: #ffffff;
   --blackColor: #0c0305;
-  --fontSize: 18px;
+  --fontSize: 16px;
   --transition: .5s;
 }
 

@@ -10,32 +10,22 @@
                 </li>
                 <li>
                     <a href="#companies">
-                        <i class="iconsmind-Building"></i> Компании
+                        <i class="iconsmind-Building"></i> Турниры
                     </a>
                 </li>
                 <li>
-                    <a href="#sellers">
-                        <i class="iconsmind-Affiliate"></i> Продавцы
-                    </a>
-                </li>
-                <li>
-                    <a href="#clients">
-                        <i class="simple-icon-people"></i> Клиенты
+                    <a href="#companies">
+                        <i class="iconsmind-Building"></i> Игры
                     </a>
                 </li>
                 <li>
                     <a href="#categories">
-                        <i class="simple-icon-layers"></i> Категории
+                        <i class="simple-icon-layers"></i> Список команд
                     </a>
                 </li>
                 <li>
                     <a href="#messages">
                         <i class="iconsmind-Post-Mail"></i> Рассылка
-                    </a>
-                </li>
-                <li>
-                    <a href="#forum">
-                        <i class="iconsmind-Speach-Bubble"></i> Форумы
                     </a>
                 </li>
                 <li>
