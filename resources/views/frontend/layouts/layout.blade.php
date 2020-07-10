@@ -8,6 +8,7 @@
 
     <!-- Links of CSS files -->
     <link rel="stylesheet" href="assets/css/frontend.css">
+    @livewireStyles
 
 
     <title>Zelda - eSports & Gaming Template</title>
@@ -40,6 +41,6 @@
 
 <!-- Links of JS files -->
 <script src="assets/js/frontend.js"></script>
-
+@livewireScripts
 </body>
 </html>

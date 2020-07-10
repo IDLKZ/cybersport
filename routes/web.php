@@ -21,6 +21,10 @@ Route::get("register","FrontendController@register")->name("register");
 Route::get('/logout',"FrontendController@logout")->name('logout');
 //Auth group end
 
+Route::get("create-news","FrontendController@createNews");
+Route::get("news","FrontendController@news");
+Route::get("news-detail/{slug}","FrontendController@news_detail");
+
 //Frontend end
 
 Route::group(['middleware' => 'Admin', 'namespace' => 'Admin', 'prefix' => 'admin'], function (){
