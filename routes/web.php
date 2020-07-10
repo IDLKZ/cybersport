@@ -12,19 +12,19 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//Frontend start
+Route::get('/', "FrontendController@index" )->name('main');
 
-Route::get('/', function () {
-    return view('frontend.home');
-})->name('main');
-Route::get('/0.0.0.0', function (){
-    return view('backend.login');
-});
+//Auth group - Login, Register , Logout
+Route::get('/0.0.0.0', "FrontendController@login")->name("login");
+Route::get("register","FrontendController@register")->name("register");
+Route::get('/logout',"FrontendController@logout")->name('logout');
+//Auth group end
+
+//Frontend end
 
 Route::group(['middleware' => 'Admin', 'namespace' => 'Admin', 'prefix' => 'admin'], function (){
     Route::get('/', function (){return view('backend.dashboard');})->name('admin');
 });
 
-Route::get('/logout', function (){
-   \Illuminate\Support\Facades\Auth::logout();
-   return redirect()->route('main');
-})->name('logout');
+
