@@ -29,11 +29,11 @@
 
                         <div class="post-content">
                             <ul class="post-meta">
-                                <li>От <a href="news-detail/{{$item->slug}}">Admin</a></li>
+{{--                                <li>От <a href="news-detail/{{$item->slug}}">Admin</a></li>--}}
                                 <li>{{$item->created_at->diffForHumans()}}</li>
-                                <li>>Игровые</li>
+                                <li>Игровые</li>
                             </ul>
-                            <h3><a href="news-detail/{{$item->slug}}">{{substr($item->title, 0, 50)}}. . .</a></h3>
+                            <h3><a href="news-detail/{{$item->slug}}">{{mb_substr($item->title, 0, 45)}}. . .</a></h3>
                             <a href="news-detail/{{$item->slug}}" class="read-more-btn">Читать далее <i class="flaticon-null"></i></a>
                         </div>
                     </div>

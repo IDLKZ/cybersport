@@ -22,7 +22,7 @@ Route::get('/logout',"FrontendController@logout")->name('logout');
 //Auth group end
 
 Route::get("create-news","FrontendController@createNews");
-Route::get("news","FrontendController@news");
+Route::get("news","FrontendController@news")->name('news');
 Route::get("news-detail/{slug}","FrontendController@news_detail");
 
 //Frontend end

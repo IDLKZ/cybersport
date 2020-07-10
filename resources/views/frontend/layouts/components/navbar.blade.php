@@ -15,14 +15,14 @@
     <div class="zelda-nav">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" href="index-2.html">
+                <a class="navbar-brand" href="{{route('main')}}">
                     <img src="assets/img/logo.png" alt="logo">
                 </a>
 
                 <div class="collapse navbar-collapse mean-menu">
                     <ul class="navbar-nav">
 
-                        <li class="nav-item"><a href="index-2.html#" class="nav-link">Новости </a></li>
+                        <li class="nav-item"><a href="{{route('news')}}" class="nav-link">Новости </a></li>
 
                         <li class="nav-item"><a href="index-2.html#" class="nav-link">Статистика <i class="flaticon-down-arrow"></i></a>
                             <ul class="dropdown-menu">
@@ -31,7 +31,7 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item"><a href="index-2.html#" class="nav-link">Участие в турнирах</a></li>
+                        <li class="nav-item"><a href="{{route('register')}}" class="nav-link">Участие в турнирах</a></li>
 
                         <li class="nav-item"><a href="index-2.html#" class="nav-link">Поиск команд </a></li>
 
