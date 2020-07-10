@@ -19,7 +19,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#categories">
+                    <a href="{{route("backend-teams")}}">
                         <i class="simple-icon-layers"></i> Список команд
                     </a>
                 </li>

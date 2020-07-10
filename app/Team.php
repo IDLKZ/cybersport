@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 
+
 class Team extends Model
 {
     protected $table = "teams";
@@ -17,13 +18,34 @@ class Team extends Model
         $team->email = $request->email;
         $team->phone = $request->phone;
         $team->secret_key = $request->secret_key;
-        $team->logo = SavePhoto::savePhoto($request->logo,"upload/team",$request->title);
+        $team->logo = SavePhoto::savePhoto($request->logo,"upload/team/",$request->title);
         $team->slug = Str::slug($request->title);
         $team->captain = $request->captain;
-        $team->status = 0;
+        if(isset($request->status)){
+            $team->status = $request->status == true ? 1 : 0;
+        }
+        else{
+            $team->status = 0;
+        }
         $team->info = $request->info;
         $team->game_id = $request->game_id;
         return $team->save();
+    }
+
+
+    public static function updateTeam($team){
+        $team->team->title = $team->title;
+        $team->team->email = $team->email;
+        $team->team->phone = $team->phone;
+        $team->team->secret_key = $team->secret_key;
+        $logo = !is_null($team->logo) ? SavePhoto::updatePhoto($team) : $team->team->logo;
+        $team->team->logo = $logo;
+        $team->team->slug = Str::slug($team->title);
+        $team->team->captain = $team->captain;
+        $team->team->status = $team->status == true ? 1 : 0;
+        $team->team->info = $team->info;
+        $team->team->game_id = $team->game_id;
+        $team->team->save();
     }
 
 
