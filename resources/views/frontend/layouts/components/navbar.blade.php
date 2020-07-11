@@ -33,7 +33,7 @@
 
                         <li class="nav-item"><a href="{{route('register')}}" class="nav-link">Участие в турнирах</a></li>
 
-                        <li class="nav-item"><a href="index-2.html#" class="nav-link">Поиск команд </a></li>
+                        <li class="nav-item"><a href="https://chat.whatsapp.com/D1UBTXKnB5E0qig2oSWKHx" class="nav-link">Поиск команд </a></li>
 
                         <li class="nav-item"><a href="contact.html" class="nav-link">Контакты</a></li>
                     </ul>

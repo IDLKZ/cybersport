@@ -1043,94 +1043,129 @@
     <section class="products-area ptb-100">
         <div class="container">
             <div class="section-title">
-                <span class="sub-title">Shop</span>
-                <h2>Our Gaming Products</h2>
+                <span class="sub-title">Магазин</span>
+                <h3>Здесь вы можете скачать игры</h3>
             </div>
 
             <div class="products-slides owl-carousel owl-theme">
                 <div class="single-products-item">
-                    <div class="products-image">
-                        <div class="bg-image">
-                            <img src="assets/img/products-shape.png" alt="image">
+                    <figure class="widget-description-game__about-text">
+                        <div class="responsive-object responsive-object--16by9">
+                            <img src="https://svirtus.cdnvideo.ru/49T9ZB5crDgFKZvJLBWTL_1mT9o=/0x0:800x481/573x325/filters:quality(100)/https://hb.bizmrg.com/cybersportru-media/e9/e9504830011f2e3a8f95eec98361e812.jpg?m=6656aba1b6eaf3e0f5d396c2ec78e702" alt="Dota 2">
                         </div>
-
-                        <img src="assets/img/products-img1.png" alt="image" class="main-image">
-
-                        <a href="index-2.html#" class="add-to-cart-btn">Add To Cart</a>
-                    </div>
-
-                    <div class="products-content">
-                        <h3><a href="single-products.html">Gaming Headphone</a></h3>
-                        <span class="price">$99.00</span>
-                    </div>
+                        <figcaption>
+                            <h1>Dota 2</h1>
+                            <div>
+                                <p>
+                                    <span class="color--gray-8a">Разработчик:</span> Valve <br>
+                                    <span class="color--gray-8a">Издатель:</span> Valve <br>
+                                    <span class="color--gray-8a">Дата анонса:</span> 13 окт. 2010 г. <br>
+                                    <span class="color--gray-8a">Дата выхода:</span> 9 июл. 2013 г.
+                                </p>
+                                <p>
+                                    <span class="color--gray-8a">Последняя версия:</span> <a href="https://www.cybersport.ru/dota-2/news/v-dota-2-vyshlo-obnovlenie-7-24" rel="nofollow noopener noreferrer" target="_blank">7.24</a><br>
+                                    <span class="color--gray-8a">Сайт:</span> <a href="http://dota2.com" rel="nofollow noopener noreferrer" target="_blank">Сайт</a>
+                                </p>
+                                <p><a href="https://store.steampowered.com/app/570/" rel="nofollow noopener noreferrer" target="_blank" class="btn btn-danger">Скачать Dota 2</a></p>
+                            </div>
+                        </figcaption>
+                    </figure>
                 </div>
 
                 <div class="single-products-item">
-                    <div class="products-image">
-                        <div class="bg-image">
-                            <img src="assets/img/products-shape.png" alt="image">
+                    <figure class="widget-description-game__about-text">
+                        <div class="responsive-object responsive-object--16by9">
+                            <img src="https://svirtus.cdnvideo.ru/HQLdLr7vO_kGM51eSmIVfKyWXjA=/0x0:1531x858/573x325/filters:quality(100)/https://hb.bizmrg.com/cybersportru-media/64/64a78231b87839d38f6ec6bb853cf2d1.jpg?m=dc1acc54451364ab2fc685970dd06a43" alt="CS:GO">
                         </div>
-
-                        <img src="assets/img/products-img2.png" alt="image" class="main-image">
-
-                        <a href="index-2.html#" class="add-to-cart-btn">Add To Cart</a>
-                    </div>
-
-                    <div class="products-content">
-                        <h3><a href="single-products.html">Gaming Chair</a></h3>
-                        <span class="price">$199.00</span>
-                    </div>
+                        <figcaption>
+                            <h1>CS:GO</h1>
+                            <div>
+                                <p>
+                                    <span class="color--gray-8a">Разработчик:</span> Valve, Hidden Path Entertainment <br>
+                                    <span class="color--gray-8a">Издатель:</span> Valve <br>
+                                    <span class="color--gray-8a">Дата анонса:</span> 12 авг. 2011 г. <br>
+                                    <span class="color--gray-8a">Дата выхода:</span> 21 авг. 2012 г.
+                                </p>
+                                <p>
+                                    <span class="color--gray-8a">Последняя версия:</span> <a href="https://www.cybersport.ru/counter-strike-go/news/obnovlenie-cs-go-uluchshilo-modeli-agentov-iz-operacii-shattered-web" rel="nofollow noopener noreferrer" target="_blank">1.37.3.0</a><br>
+                                    <span class="color--gray-8a">Сайт:</span> <a href="http://www.counter-strike.net" rel="nofollow noopener noreferrer" target="_blank">www.counter-strike.net</a>
+                                </p>
+                                <p><a href="https://store.steampowered.com/app/730/" rel="nofollow noopener noreferrer" target="_blank" class="btn btn-danger">Скачать CS:GO</a></p>
+                            </div>
+                        </figcaption>
+                    </figure>
                 </div>
 
                 <div class="single-products-item">
-                    <div class="products-image">
-                        <div class="bg-image">
-                            <img src="assets/img/products-shape.png" alt="image">
+                    <figure class="widget-description-game__about-text">
+                        <div class="responsive-object responsive-object--16by9">
+                            <img src="https://svirtus.cdnvideo.ru/CCKrpMSvRAcfvS7DbXzzudyIaaE=/0x0:1595x895/573x325/filters:quality(100)/https://hb.bizmrg.com/cybersportru-media/2c/2cb0a2c3593c0c0a14a6284d7033b90c.jpg?m=ce8dfcda6d9fbd37e916718aa357d23f" alt="PUBG">
                         </div>
-
-                        <img src="assets/img/products-img3.png" alt="image" class="main-image">
-
-                        <a href="index-2.html#" class="add-to-cart-btn">Add To Cart</a>
-                    </div>
-
-                    <div class="products-content">
-                        <h3><a href="single-products.html">Gaming Mouse</a></h3>
-                        <span class="price">$69.00</span>
-                    </div>
+                        <figcaption>
+                            <h1>PUBG</h1>
+                            <div>
+                                <p>
+                                    <span class="color--gray-8a">Разработчик:</span> PUBG Corp. <br>
+                                    <span class="color--gray-8a">Издатель:</span> PUBG Corp.; Mail.Ru Group (PC в СНГ); Tencent (PC и мобильные устройства в Китае); Microsoft Studios (Xbox One); Sony (PS4). <br>
+                                    <span class="color--gray-8a">Дата анонса:</span> 1 июн. 2016 г. <br>
+                                    <span class="color--gray-8a">Дата выхода:</span> 20 дек. 2017 г.
+                                </p>
+                                <p>
+                                    <span class="color--gray-8a">Последняя версия:</span> <a href="https://www.pubg.com/ru/2019/12/11/pc-update-5-3/" rel="nofollow noopener noreferrer" target="_blank">5.3</a><br>
+                                    <span class="color--gray-8a">Сайт:</span> <a href="https://www.pubg.com/" rel="nofollow noopener noreferrer" target="_blank">www.pubg.com</a>
+                                </p>
+                                <p><a href="https://store.steampowered.com/app/578080" rel="nofollow noopener noreferrer" target="_blank" class="btn btn-danger">Скачать PUBG</a></p>
+                            </div>
+                        </figcaption>
+                    </figure>
                 </div>
 
                 <div class="single-products-item">
-                    <div class="products-image">
-                        <div class="bg-image">
-                            <img src="assets/img/products-shape.png" alt="image">
+                    <figure class="widget-description-game__about-text">
+                        <div class="responsive-object responsive-object--16by9">
+                            <img src="https://svirtus.cdnvideo.ru/D_15hrJ2XKwm6FAXBPGzHLb8VbY=/0x0:1275x715/573x325/filters:quality(100)/https://hb.bizmrg.com/cybersportru-media/29/29b706c71a61516bca04aee960dafb0d.jpg?m=f2c242c064df786d79921140971cae1b" alt="Fornite">
                         </div>
-
-                        <img src="assets/img/products-img4.png" alt="image" class="main-image">
-
-                        <a href="index-2.html#" class="add-to-cart-btn">Add To Cart</a>
-                    </div>
-
-                    <div class="products-content">
-                        <h3><a href="single-products.html">Gaming Pad</a></h3>
-                        <span class="price">$299.00</span>
-                    </div>
+                        <figcaption>
+                            <h1>Fornite</h1>
+                            <div>
+                                <p>
+                                    <span class="color--gray-8a">Разработчик:</span> Epic Games <br>
+                                    <span class="color--gray-8a">Издатель:</span> Epic Games <br>
+                                    <span class="color--gray-8a">Дата анонса:</span> 10 окт. 2011 г. <br>
+                                    <span class="color--gray-8a">Дата выхода:</span> 25 июл. 2015 г.
+                                </p>
+                                <p>
+                                    <span class="color--gray-8a">Последняя версия:</span> <a href="https://www.epicgames.com/fortnite/ru/news/battle-royale-update-whats-new-in-v11-40" rel="nofollow noopener noreferrer" target="_blank">11.40</a><br>
+                                    <span class="color--gray-8a">Сайт:</span> <a href="https://www.epicgames.com/fortnite/ru/buy-now/battle-royale" rel="nofollow noopener noreferrer" target="_blank">www.epicgames.com</a>
+                                </p>
+                                <p><a href="https://www.epicgames.com/fortnite/ru/buy-now/battle-royale" rel="nofollow noopener noreferrer" target="_blank" class="btn btn-danger">Скачать Fortnite</a></p>
+                            </div>
+                        </figcaption>
+                    </figure>
                 </div>
 
                 <div class="single-products-item">
-                    <div class="products-image">
-                        <div class="bg-image">
-                            <img src="assets/img/products-shape.png" alt="image">
+                    <figure class="widget-description-game__about-text">
+                        <div class="responsive-object responsive-object--16by9">
+                            <img src="https://svirtus.cdnvideo.ru/Q-WY_mhet1w9QYEDx6qoguy8FjQ=/0x0:1274x714/573x325/filters:quality(100)/https://hb.bizmrg.com/cybersportru-media/77/77a16665b21989d87e55379741bcb1fd.jpg?m=3c7b08206759388d05297e1cf2ee1c7d" alt="League of Legends">
                         </div>
-
-                        <img src="assets/img/products-img6.png" alt="image" class="main-image">
-
-                        <a href="index-2.html#" class="add-to-cart-btn">Add To Cart</a>
-                    </div>
-
-                    <div class="products-content">
-                        <h3><a href="single-products.html">Real Headphone</a></h3>
-                        <span class="price">$59.00</span>
-                    </div>
+                        <figcaption>
+                            <h1>League of Legends</h1>
+                            <div>
+                                <p>
+                                    <span class="color--gray-8a">Разработчик:</span> Riot Games <br>
+                                    <span class="color--gray-8a">Издатель:</span> Riot Games, THQ, Tencent <br>
+                                    <span class="color--gray-8a">Дата анонса:</span> 7 окт. 2008 г. <br>
+                                    <span class="color--gray-8a">Дата выхода:</span> 27 окт. 2009 г.
+                                </p>
+                                <p>
+                                    <span class="color--gray-8a">Последняя версия:</span> <a href="https://ru.leagueoflegends.com/ru-ru/news/game-updates/patch-10-2-notes/" rel="nofollow noopener noreferrer" target="_blank">10.2</a><br>
+                                    <span class="color--gray-8a">Сайт:</span> <a href="https://ru.leagueoflegends.com/ru/" rel="nofollow noopener noreferrer" target="_blank">leagueoflegends.com</a>
+                                </p>
+                                <p><a href="https://signup.ru.leagueoflegends.com/ru/signup/index#/" rel="nofollow noopener noreferrer" target="_blank" class="btn btn-danger">Скачать League of Legends</a></p>
+                            </div>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
@@ -1141,7 +1176,7 @@
     <div class="partner-area bg-image pt-100 pb-70 jarallax" data-jarallax='{"speed": 0.3}'>
         <div class="container">
             <div class="section-title">
-                <span class="sub-title">Our Valuable Partners</span>
+                <span class="sub-title">Наши партнеры</span>
             </div>
 
             <div class="partner-slides owl-carousel owl-theme">
@@ -1169,74 +1204,7 @@
     </div>
     <!-- End Partner Area -->
 
-    <!-- Start Blog Area -->
-    <section class="blog-area ptb-100">
-        <div class="container">
-            <div class="section-title">
-                <span class="sub-title">Blog</span>
-                <h2>News And Updates</h2>
-            </div>
 
-            <div class="blog-slides-two owl-carousel owl-theme">
-                <div class="single-blog-post">
-                    <div class="post-image">
-                        <a href="single-blog-1.html" class="d-block">
-                            <img src="assets/img/blog-img1.png" alt="image">
-                        </a>
-                    </div>
-
-                    <div class="post-content">
-                        <span class="sub-title">Release Note</span>
-                        <h3><a href="single-blog-1.html">ANDROID TOOLS FOR MOBILE GAME</a></h3>
-                        <a href="single-blog-1.html" class="default-btn">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="single-blog-post">
-                    <div class="post-image">
-                        <a href="single-blog-1.html" class="d-block">
-                            <img src="assets/img/blog-img2.png" alt="image">
-                        </a>
-                    </div>
-
-                    <div class="post-content">
-                        <span class="sub-title">Release Note</span>
-                        <h3><a href="single-blog-1.html">CONVERSION RATE THE SALES FUNNEL</a></h3>
-                        <a href="single-blog-1.html" class="default-btn">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="single-blog-post">
-                    <div class="post-image">
-                        <a href="single-blog-1.html" class="d-block">
-                            <img src="assets/img/blog-img3.png" alt="image">
-                        </a>
-                    </div>
-
-                    <div class="post-content">
-                        <span class="sub-title">Release Note</span>
-                        <h3><a href="single-blog-1.html">HOW TO HIT THE MARK WITH MOBILE GAMES</a></h3>
-                        <a href="single-blog-1.html" class="default-btn">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="single-blog-post">
-                    <div class="post-image">
-                        <a href="single-blog-1.html" class="d-block">
-                            <img src="assets/img/blog-img2.png" alt="image">
-                        </a>
-                    </div>
-
-                    <div class="post-content">
-                        <span class="sub-title">Release Note</span>
-                        <h3><a href="single-blog-1.html">CONVERSION RATE THE SALES FUNNEL</a></h3>
-                        <a href="single-blog-1.html" class="default-btn">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Blog Area -->
 
 
     @endsection

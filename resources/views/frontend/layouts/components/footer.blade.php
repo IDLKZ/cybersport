@@ -1,20 +1,20 @@
 <div class="footer-area-bg-image">
 
     <!-- Start Subscribe Area -->
-    <section class="subscribe-area">
-        <div class="container">
-            <div class="subscribe-inner ptb-100 jarallax" data-jarallax='{"speed": 0.3}'>
-                <span class="sub-title">Get Updates</span>
-                <h2>Zelda Newsletter</h2>
-                <form class="newsletter-form" data-toggle="validator">
-                    <label><i class="flaticon-null-1"></i></label>
-                    <input type="text" class="input-newsletter" placeholder="Enter your email address" name="EMAIL" required autocomplete="off">
-                    <button type="submit" class="default-btn">Subscribe Now</button>
-                    <div id="validator-newsletter" class="form-result"></div>
-                </form>
-            </div>
-        </div>
-    </section>
+{{--    <section class="subscribe-area">--}}
+{{--        <div class="container">--}}
+{{--            <div class="subscribe-inner ptb-100 jarallax" data-jarallax='{"speed": 0.3}'>--}}
+{{--                <span class="sub-title">Get Updates</span>--}}
+{{--                <h2>Zelda Newsletter</h2>--}}
+{{--                <form class="newsletter-form" data-toggle="validator">--}}
+{{--                    <label><i class="flaticon-null-1"></i></label>--}}
+{{--                    <input type="text" class="input-newsletter" placeholder="Enter your email address" name="EMAIL" required autocomplete="off">--}}
+{{--                    <button type="submit" class="default-btn">Subscribe Now</button>--}}
+{{--                    <div id="validator-newsletter" class="form-result"></div>--}}
+{{--                </form>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
     <!-- End Subscribe Area -->
 
     <!-- Start Social Area -->
@@ -139,17 +139,17 @@
                     <p><i class='bx bx-copyright'></i>2020 <a href="index-2.html">Zelda</a> games Pty Ltd.</p>
                 </div>
 
-                <div class="col-lg-6 col-md-6 col-sm-7">
-                    <div class="lang-switcher">
-                        <span>Select your language</span>
-                        <select>
-                            <option>English</option>
-                            <option>Spanish</option>
-                            <option>French</option>
-                            <option>Portuguese</option>
-                        </select>
-                    </div>
-                </div>
+{{--                <div class="col-lg-6 col-md-6 col-sm-7">--}}
+{{--                    <div class="lang-switcher">--}}
+{{--                        <span>Select your language</span>--}}
+{{--                        <select>--}}
+{{--                            <option>English</option>--}}
+{{--                            <option>Spanish</option>--}}
+{{--                            <option>French</option>--}}
+{{--                            <option>Portuguese</option>--}}
+{{--                        </select>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
             </div>
         </div>
     </div>
