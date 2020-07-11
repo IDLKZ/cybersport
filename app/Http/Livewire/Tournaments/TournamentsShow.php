@@ -9,6 +9,7 @@ class TournamentsShow extends Component
 
     protected $listeners = ['getInfo' => 'showTeam'];
     public $data;
+    public $game;
 
 
     public function render()
@@ -17,6 +18,7 @@ class TournamentsShow extends Component
     }
 
     public function showTeam($data){
-        $this->data = $data;
+        $this->data = $data[0];
+        $this->game = $data[1];
     }
 }

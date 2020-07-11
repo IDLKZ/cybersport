@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-12 mb-4">
                         <div class="card mb-4">
-                            <img src="{{$data["logo"]}}" class="card-img-top" />
+                            <img src="{{$data["logo"]}}" style="margin: 0 auto;" width="250" height="250"/>
 
                             <div class="card-body">
                                 <p class="text-muted text-small mb-2">Наименование команды:</p>
@@ -20,7 +20,7 @@
                                 <p class="text-muted text-small mb-2">Секретное слово команды:</p>
                                 <p class="mb-3">{{$data["secret_key"]}}</p>
                                 <p class="text-muted text-small mb-2">Тип игры:</p>
-                                <p class="mb-3">{{$data["game_id"]}}</p>
+                                <p class="mb-3">{{$game['title']}}</p>
                                 <p class="text-muted text-small mb-2">Информация о компании:</p>
                                 <p class="mb-3">
                                     {{$data["info"]}}

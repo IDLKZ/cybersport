@@ -32,8 +32,8 @@ class TournamentsLists extends Component
     }
 
     public function getInfo($id){
-        $tournament = Tournament::firstWhere('id', $id);
-        $this->emit("getInfo",$tournament);
+        $tournament = Tournament::find($id);
+        $this->emit("getInfo",[$tournament, $tournament->games]);
     }
 
 

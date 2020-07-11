@@ -31,8 +31,8 @@ class TeamList extends Component
     }
 
     public function getInfo($id){
-        $team = Team::firstWhere('id', $id);
-        $this->emit("getInfo",$team);
+        $team = Team::find($id);
+        $this->emit("getInfo",[$team, $team->games]);
     }
 
 

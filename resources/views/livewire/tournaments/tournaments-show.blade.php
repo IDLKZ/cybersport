@@ -12,7 +12,7 @@
                                 <p class="text-muted text-small mb-2">Наименование команды:</p>
                                 <p class="mb-3">{{$data["title"]}}</p>
                                 <p class="text-muted text-small mb-2">Тип игры:</p>
-                                <p class="mb-3">{{$data["game_id"]}}</p>
+                                <p class="mb-3">{{$game['title']}}</p>
                                 <p class="text-muted text-small mb-2">Информация о команде:</p>
                                 <p class="mb-3">
                                     {{$data["info"]}}
