@@ -10,4 +10,8 @@ class BackendController extends Controller
     public function teams(){
         return view("backend.teams");
     }
+
+    public function tournaments(){
+        return view("backend.tournaments");
+    }
 }

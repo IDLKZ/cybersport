@@ -18,10 +18,11 @@ class SavePhoto extends Model
         }
     }
 
-    public static function updatePhoto($data){
+    public static function updatePhoto($oldImg, $newImg, $data,$folder){
 
-        Storage::disk("public")->delete($data->team->logo);
-        return self::savePhoto($data->logo,"upload/team/",$data->title);
+        Storage::disk("public")->delete($oldImg);
+        $img = self::savePhoto($newImg,$folder,$data->title);
+        return $img;
     }
 
 

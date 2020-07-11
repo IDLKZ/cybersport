@@ -9,7 +9,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#companies">
+                    <a href="{{route("backend-tournaments")}}">
                         <i class="iconsmind-Building"></i> Турниры
                     </a>
                 </li>
