@@ -35,10 +35,10 @@ class TournamentsAdd extends Component
             'game_id'=>'required',
         ]);
         if(Tournament::saveTournament($this)){
-            return back();
+            return redirect()->route('backend-tournaments');
         }
         else{
-            dd(404);
+            abort(404);
         }
     }
 

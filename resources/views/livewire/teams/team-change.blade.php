@@ -30,9 +30,9 @@
             <div class="form-group">
                 <h4>Тип игры</h4>
                 <select class="form-control" name="type" wire:model = "game_id">
-                    <option value="{{$game_id}}">{{$game_title}}</option>
+                    <option selected value="{{$game_id2}}">{{$game_id2_title}}</option>
                 @foreach($games as $game)
-                        @if($game->id != $game_id)
+                        @if($game->id != $game_id2)
                         <option value="{{$game->id}}">{{$game->title}}</option>
                         @endif
                     @endforeach

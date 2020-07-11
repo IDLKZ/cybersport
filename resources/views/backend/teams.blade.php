@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="mb-3">
-                    <h1>Список компаний</h1>
+                    <h1>Список команд</h1>
                     <div class="float-sm-right text-zero">
                         <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-backdrop="static"
                                 data-target="#exampleModalRight">Создать</button>
@@ -14,7 +14,7 @@
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">Создать новую компанию</h5>
+                                        <h5 class="modal-title">Создать новую команду</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -36,7 +36,7 @@
                                 <a href="/landlord">Главная</a>
                             </li>
                             <li class="breadcrumb-item">
-                                <a href="#" aria-current="page">Список компаний</a>
+                                <a href="#" aria-current="page">Список команд</a>
                             </li>
                         </ol>
                     </nav>
@@ -55,7 +55,7 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Информация о компании:</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Информация о команде:</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -79,7 +79,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Изменить компанию</h5>
+                        <h5 class="modal-title">Изменить команду</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>

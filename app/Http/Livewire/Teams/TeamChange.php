@@ -26,7 +26,8 @@ class TeamChange extends Component
     public $game_id;
     public $team_id;
     public $img;
-    public $game_title;
+    public $game_id2;
+    public $game_id2_title;
 
     public function changeTeam($id){
         if ($id){
@@ -41,8 +42,9 @@ class TeamChange extends Component
             $this->status=$this->team["status"];
             $this->team_id=$id;
             $this->img = $this->team['logo'];
+            $this->game_id2 = $this->team['game_id'];
             $tima = Game::where('id', $this->team["game_id"])->first();
-            $this->game_title = $tima->title;
+            $this->game_id2_title = $tima->title;
         }
         else{
             $this->team = null;

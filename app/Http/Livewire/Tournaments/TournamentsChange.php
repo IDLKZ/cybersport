@@ -38,7 +38,6 @@ class TournamentsChange extends Component
             $this->game_id2 =  $this->tournament["game_id"];
             $title = Game::find($this->tournament["game_id"]);
             $this->game_id2_title = $title->title;
-//            увууауауававаав
 
 
         }
@@ -68,10 +67,10 @@ class TournamentsChange extends Component
             'game_id'=>'required',
         ]);
         if(Tournament::updateTournament($this)){
-            return back();
+            return redirect()->route('backend-tournaments');
         }
         else{
-            dd(404);
+            abort(404);
         }
     }
 

@@ -15,9 +15,9 @@
             <div class="form-group">
                 <h4>Тип игры</h4>
                 <select class="form-control" name="type" wire:model = "game_id">
-                    <option value="{{$game_id2}}">{{$game_id2_title}}</option>
+                    <option selected value="{{$game_id2}}">{{$game_id2_title}}</option>
                     @foreach($games as $game)
-                        @if($game->id !== $game_id2)
+                        @if($game->id != $game_id2)
                             <option value="{{$game->id}}">{{$game->title}}</option>
                         @endif
                     @endforeach
@@ -45,7 +45,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Отмена</button>
-                <button type="submit" class="btn btn-primary">Создать</button>
+                <button type="submit" class="btn btn-primary">Обновить</button>
             </div>
         </form>
     </div>
