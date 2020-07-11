@@ -36,15 +36,17 @@
 
         <div class="form-group">
             <label>Специализация игры</label>
-            <select class="form-control" wire:model='game_id'>
+
                 @if(!is_null($games))
                     @foreach($games as $game)
-                        <option value="{{$game->id}}">{{$game->title}}</option>
+                        <div class="row pl-5">
+                            <input type="radio"id="game{{$game->id}}" name="gameID" class="form-check-input" wire:model="game_id" value="{{$game->id}}">
+                            <label for="game{{$game->id}}" class="form-check-label">{{$game->title}}</label>
+                        </div>
+
                     @endforeach
-                    @endif
+                @endif
 
-
-            </select>
 
             @error('game_id') <p class="text-danger"> {{$message}}</p> @enderror
 
@@ -52,6 +54,7 @@
 
         <div class="form-group">
             <label>Секретное слово</label>
+            <small>(Используйте секретное слово для подачи заявки на участие в наших будущих турнирах )</small>
             <input type="password" class="form-control" wire:model='secret_key'>
             @error('secret_key') <p class="text-danger"> {{$message}}</p> @enderror
 

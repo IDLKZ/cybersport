@@ -18,7 +18,8 @@ class Team extends Model
         $team->email = $request->email;
         $team->phone = $request->phone;
         $team->secret_key = $request->secret_key;
-        $team->logo = SavePhoto::savePhoto($request->logo,"upload/team/",$request->title);
+        $logo = !is_null($request->logo) ? SavePhoto::savePhoto($request->logo,"upload/team/",$request->title) : null;
+        $team->logo = $logo;
         $team->slug = Str::slug($request->title);
         $team->captain = $request->captain;
         if(isset($request->status)){
@@ -27,13 +28,14 @@ class Team extends Model
         else{
             $team->status = 0;
         }
-        $team->info = $request->info;
+        $team->info = !is_null($request->info) ? $request->info : null;
         $team->game_id = $request->game_id;
         return $team->save();
     }
 
 
     public static function updateTeam($team){
+
         $team->team->title = $team->title;
         $team->team->email = $team->email;
         $team->team->phone = $team->phone;
@@ -45,7 +47,7 @@ class Team extends Model
         $team->team->status = $team->status == true ? 1 : 0;
         $team->team->info = $team->info;
         $team->team->game_id = $team->game_id;
-        $team->team->save();
+        return $team->team->save();
     }
 
 

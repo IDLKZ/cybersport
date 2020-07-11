@@ -29,12 +29,13 @@ class Register extends Component
         $this->validateOnly($field,[
             'title'=>'required|unique:teams',
             'email'=>'required|email',
-            'phone'=>'required',
-            'logo'=>'required|image|max:2048',
+            'phone'=>'required|numeric',
+            'logo'=>'sometimes|nullable|image|max:2048',
+            'secret_key' => 'required',
             'captain'=>'required',
-            'info'=>'required',
+            'info'=>'sometimes|nullable',
             'game_id'=>'required',
-            ]
+            ],[], ['game_id' => 'тип игры', 'captain' => 'капитан команды']
         );
     }
 
@@ -42,17 +43,19 @@ class Register extends Component
         $this->validate([
             'title'=>'required|unique:teams',
             'email'=>'required|email',
-            'phone'=>'required',
-            'logo'=>'required|image|max:2048',
+            'phone'=>'required|numeric',
+            'logo'=>'sometimes|nullable|image|max:2048',
             'captain'=>'required',
-            'info'=>'required',
+            'secret_key' => 'required',
+            'info'=>'sometimes|nullable',
             'game_id'=>'required',
-        ]);
+        ], [], ['game_id' => 'тип игры', 'captain' => 'капитан команды']);
+
         if(Team::saveTeam($this)){
-            return $this->redirect("/register");
+            return redirect()->route('main');
         }
         else{
-            dd(404);
+            abort(404);
         }
     }
 }

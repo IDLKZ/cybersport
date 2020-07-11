@@ -26,7 +26,7 @@ class TeamChange extends Component
     public $game_id;
     public $team_id;
     public $img;
-
+    public $game_title;
 
     public function changeTeam($id){
         if ($id){
@@ -41,6 +41,8 @@ class TeamChange extends Component
             $this->status=$this->team["status"];
             $this->team_id=$id;
             $this->img = $this->team['logo'];
+            $tima = Game::where('id', $this->team["game_id"])->first();
+            $this->game_title = $tima->title;
         }
         else{
             $this->team = null;
@@ -56,7 +58,7 @@ class TeamChange extends Component
                 'secret_key'=>'required',
                 'logo'=>'sometimes|nullable|image|max:2048',
                 'captain'=>'required',
-                'info'=>'required',
+                'info'=>'sometimes|nullable',
                 'game_id'=>'required',
             ]
         );
@@ -71,12 +73,11 @@ class TeamChange extends Component
             'secret_key'=>'required',
             'logo'=>'sometimes|nullable|image|max:2048',
             'captain'=>'required',
-            'info'=>'required',
+            'info'=>'sometimes|nullable',
             'game_id'=>'required',
         ]);
-
         if(Team::updateTeam($this)){
-            return $this->redirect("/admin");
+            return redirect()->route('admin');
         }
         else{
             dd(404);
@@ -87,7 +88,6 @@ class TeamChange extends Component
 
     public function render()
     {
-
         $games = Game::all();
         return view('livewire.teams.team-change',compact("games"));
     }

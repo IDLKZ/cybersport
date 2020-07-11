@@ -20,6 +20,7 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="register-form">
                         <h2>Новая команда!</h2>
+                        <small>Если вы ранее не участвовали в наших турнирах, то обязательно зарегистрируйтесь</small>
                         {{--livewire content--}}
                         @livewire('auth.register')
 

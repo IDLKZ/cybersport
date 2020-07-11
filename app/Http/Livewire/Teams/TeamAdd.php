@@ -26,9 +26,9 @@ class TeamAdd extends Component
                 'title'=>'required|unique:teams',
                 'email'=>'required|email',
                 'phone'=>'required',
-                'logo'=>'required|image|max:2048',
+                'logo'=>'sometimes|nullable|image|max:2048',
                 'captain'=>'required',
-                'info'=>'required',
+                'info'=>'sometimes|nullable',
                 'game_id'=>'required',
             ]
         );
@@ -39,9 +39,9 @@ class TeamAdd extends Component
             'title'=>'required|unique:teams',
             'email'=>'required|email',
             'phone'=>'required',
-            'logo'=>'required|image|max:2048',
+            'logo'=>'sometimes|nullable|image|max:2048',
             'captain'=>'required',
-            'info'=>'required',
+            'info'=>'sometimes|nullable',
             'game_id'=>'required',
         ]);
         if(Team::saveTeam($this)){

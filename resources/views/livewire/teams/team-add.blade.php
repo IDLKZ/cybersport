@@ -13,7 +13,7 @@
                 @error('email') <p class="text-danger"> {{$message}}</p> @enderror
             </div>
             <div class="form-group">
-                <h4>Телефон команды</h4>
+                <h4>Телефон капитана команды</h4>
                 <input type="text" class="form-control"   wire:model = "phone">
                 @error('phone') <p class="text-danger"> {{$message}}</p> @enderror
             </div>
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <h4>Логотип компании</h4>
+                <h4>Логотип команды</h4>
                 <input type="file" class="form-control" id="exampleInputName" name="img" wire:model="logo">
                 @error('logo') <p class="text-danger"> {{$message}}</p>  @enderror
             </div>

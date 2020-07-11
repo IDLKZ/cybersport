@@ -11,9 +11,9 @@
                         Сортировка:
                     </button>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" wire:click.prevent = "changeFilter(0,1)">Все компании</a>
-                        <a class="dropdown-item" wire:click.prevent = "changeFilter(1)">Разрешенные компании</a>
-                        <a class="dropdown-item" wire:click.prevent = "changeFilter(0)">Забаненные компании</a>
+                        <a class="dropdown-item" wire:click.prevent = "changeFilter(0,1)">Все команды</a>
+                        <a class="dropdown-item" wire:click.prevent = "changeFilter(1)">Разрешенные команды</a>
+                        <a class="dropdown-item" wire:click.prevent = "changeFilter(0)">Забаненные команды</a>
                     </div>
                 </div>
 
