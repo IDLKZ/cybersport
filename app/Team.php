@@ -11,6 +11,10 @@ class Team extends Model
     protected $table = "teams";
     protected $fillable = ["title","email","phone","secret_key","logo","slug","captain","status","info","game_id"];
 
+    public function games(){
+        return $this->hasOne(Game::class, 'id', 'game_id');
+    }
+
 
     public static function saveTeam($request){
         $team = new self();

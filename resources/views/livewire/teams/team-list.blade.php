@@ -55,7 +55,7 @@
                             <a href="Layouts.Details.html" class="w-40 w-sm-100">
                                 <p class="list-item-heading mb-1 truncate">{{$team->title}}</p>
                             </a>
-                            <p class="mb-1 text-muted text-small w-15 w-sm-100">{{$team->game_id}}</p>
+                            <p class="mb-1 text-muted text-small w-15 w-sm-100">{{$team->games->title}}</p>
                             <p class="mb-1 text-muted text-small w-15 w-sm-100">{{$team->created_at->diffForHumans()}}</p>
                             <div class="w-15 w-sm-100">
                                 @if($team->status)

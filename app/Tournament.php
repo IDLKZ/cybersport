@@ -11,7 +11,7 @@ class Tournament extends Model
 
 
     public function games(){
-        return $this->belongsTo(Game::class);
+        return $this->hasOne(Game::class, 'id', 'game_id');
     }
 
     public static function saveTournament($request){
