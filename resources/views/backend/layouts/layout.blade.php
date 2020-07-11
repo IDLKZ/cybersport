@@ -19,9 +19,10 @@
     </div>
 </main>
 
-@livewireScripts
+
 <script src="js/cabinet.js"></script>
 
+@livewireScripts
 </body>
 
 </html>

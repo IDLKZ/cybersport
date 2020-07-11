@@ -9,7 +9,10 @@
             </div>
             <div class="form-group">
                 <h4>Начало</h4>
-                <input type="text" class="form-control"   wire:model = "start">
+                <input type="text" class="form-control datepicker" autocomplete="off"
+                       data-provide="datepicker" data-date-autoclose="true"
+                       data-date-format="mm/dd/yyyy" data-date-today-highlight="true"
+                       onchange="this.dispatchEvent(new InputEvent('input'))" wire:model = "start">
                 @error('start') <p class="text-danger"> {{$message}}</p> @enderror
             </div>
             <div class="form-group">
@@ -34,9 +37,10 @@
                     <label class="custom-control-label show" style="font-size: 16px" for="customCheck1">Активный</label>
                 </div>
             </div>
-            <div class="form-group">
+            <div class="custom-file">
                 <h4>Картинка турнира</h4>
-                <input type="file" class="form-control" id="exampleInputName" name="img" wire:model="img">
+                <input type="file" id="inputGroupFile01" class="custom-file-input" name="img" wire:model="img">
+                <label style="font-size: 16px" class="custom-file-label" for="inputGroupFile01">Выбрать файл</label>
                 @error('img') <p class="text-danger"> {{$message}}</p>  @enderror
             </div>
             <div class="modal-footer">

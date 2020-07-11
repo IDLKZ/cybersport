@@ -71,6 +71,23 @@
             </div>
         </div>
         {{--        End Modal--}}
+    <!-- Modal -->
+        <div class="modal "  id="readCompanyModal1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel1">Информация о турнире:</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                            @livewire('tournaments.set-team')
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{--        End Modal--}}
 
         {{--        Right Modal Change--}}
         {{--        Right Modal--}}
@@ -95,4 +112,5 @@
         {{--      End Right Modal Change  --}}
 
     </div>
+
 @endsection

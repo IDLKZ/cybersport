@@ -36,6 +36,11 @@ class TournamentsLists extends Component
         $this->emit("getInfo",[$tournament, $tournament->games]);
     }
 
+    public function setTeams($id){
+        $tournament = Tournament::find($id);
+        $this->emit("setTeams",[$tournament, $tournament->games]);
+    }
+
 
     public function deleteTournament($id){
         $tournament = Tournament::firstWhere('id', $id);

@@ -9,7 +9,10 @@
             </div>
             <div class="form-group">
                 <h4>Начало</h4>
-                <input type="text" class="form-control"   wire:model = "start">
+                <input type="text" class="form-control datepicker" autocomplete="off"
+                       data-provide="datepicker" data-date-autoclose="true"
+                       data-date-format="mm/dd/yyyy" data-date-today-highlight="true"
+                       onchange="this.dispatchEvent(new InputEvent('input'))" wire:model = "start">
                 @error('start') <p class="text-danger"> {{$message}}</p> @enderror
             </div>
             <div class="form-group">

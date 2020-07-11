@@ -56,7 +56,7 @@
                                 <p class="list-item-heading mb-1 truncate">{{$tournament->title}}</p>
                             </a>
                             <p class="mb-1 text-muted text-small w-15 w-sm-100">{{$tournament->games->title}}</p>
-                            <p class="mb-1 text-muted text-small w-15 w-sm-100">{{$tournament->created_at->diffForHumans()}}</p>
+                            <p class="mb-1 text-muted text-small w-15 w-sm-100">{{$tournament->start}}</p>
                             <div class="w-15 w-sm-100">
                                 @if($tournament->status)
                                     <span class="badge badge-pill badge-success">Активный</span>
@@ -67,6 +67,10 @@
                         </div>
                         {{--Companies Action--}}
                         <div class="custom-control custom-checkbox pl-1 align-self-center pr-4">
+
+                            <button type="button" class="btn btn-outline-primary"  data-toggle="modal" wire:click="setTeams({{$tournament->id}})" data-target="#readCompanyModal1">
+                                <i class="simple-icon-plus"></i>
+                            </button>
 
                             <button type="button" class="btn btn-outline-primary"  data-toggle="modal" wire:click="getInfo({{$tournament->id}})" data-target="#readCompanyModal">
                                 <i class="simple-icon-eye"></i>
