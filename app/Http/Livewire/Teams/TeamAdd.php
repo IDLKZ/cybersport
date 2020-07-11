@@ -45,10 +45,10 @@ class TeamAdd extends Component
             'game_id'=>'required',
         ]);
         if(Team::saveTeam($this)){
-            return $this->redirect("/admin");
+            return redirect()->route('backend-teams');
         }
         else{
-            dd(404);
+            abort(404);
         }
     }
 

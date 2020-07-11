@@ -79,10 +79,10 @@ class TeamChange extends Component
             'game_id'=>'required',
         ]);
         if(Team::updateTeam($this)){
-            return redirect()->route('admin');
+            return redirect()->route('backend-teams');
         }
         else{
-            dd(404);
+            abort(404);
         }
     }
 
