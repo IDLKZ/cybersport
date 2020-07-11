@@ -21,6 +21,8 @@ class TournamentsChange extends Component
     public $info;
     public $status;
     public $game_id;
+    public $game_id2;
+    public $game_id2_title;
 
 
 
@@ -33,6 +35,9 @@ class TournamentsChange extends Component
             $this->status = $this->tournament["status"];
             $this->game_id = $this->tournament["game_id"];
             $this->image = $this->tournament["img"];
+            $this->game_id2 =  $this->tournament["game_id"];
+            $title = Game::find($this->tournament["game_id"]);
+            $this->game_id2_title = $title->title;
 
 
         }
