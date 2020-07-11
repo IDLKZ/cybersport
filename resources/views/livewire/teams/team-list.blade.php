@@ -47,12 +47,12 @@
         @if(count($teams)>0)
             @foreach($teams as $team)
                 <div class="card d-flex flex-row mb-3">
-                    <a class="d-flex" href="Layouts.Details.html">
-                        <img src="{{$team->logo}}" class="list-thumbnail responsive border-0" />
+                    <a class="d-flex" href="#">
+                        <img data-toggle="modal" wire:click.prevent="getInfo({{$team->id}})" data-target="#readCompanyModal" src="{{$team->logo}}" class="list-thumbnail responsive border-0" />
                     </a>
                     <div class="pl-2 d-flex flex-grow-1 min-width-zero">
                         <div class="card-body align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero align-items-lg-center">
-                            <a href="Layouts.Details.html" class="w-40 w-sm-100">
+                            <a href="###" data-toggle="modal" wire:click.prevent="getInfo({{$team->id}})" data-target="#readCompanyModal" class="w-40 w-sm-100">
                                 <p class="list-item-heading mb-1 truncate">{{$team->title}}</p>
                             </a>
                             <p class="mb-1 text-muted text-small w-15 w-sm-100">{{$team->games->title}}</p>
