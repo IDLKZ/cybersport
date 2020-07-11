@@ -31,9 +31,9 @@
                     {{session()->get("limit")}}
                 </button>
                 <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" wire:click.prevent = "changeLimit(1)">1</a>
-                    <a class="dropdown-item" wire:click.prevent = "changeLimit(2)">2</a>
-                    <a class="dropdown-item" wire:click.prevent = "changeLimit(3)">3</a>
+                    <a class="dropdown-item" wire:click.prevent = "changeLimit(5)">5</a>
+                    <a class="dropdown-item" wire:click.prevent = "changeLimit(10)">10</a>
+                    <a class="dropdown-item" wire:click.prevent = "changeLimit(20)">20</a>
                     <a class="dropdown-item" wire:click.prevent = "changeLimit(40)">40</a>
                     <a class="dropdown-item" wire:click.prevent = "changeLimit(60)">60</a>
                     <a class="dropdown-item" wire:click.prevent = "changeLimit(100)">100</a>
