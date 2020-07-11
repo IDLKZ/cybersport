@@ -8,7 +8,7 @@
         </div>
     </div>
         @endforeach
-    <button type="submit">SEND</button>
+    <button type="submit" class="btn btn-success">Добавить</button>
     </form>
 </div>
 

@@ -4,6 +4,7 @@ namespace App\Http\Livewire\Tournaments;
 
 use App\Team;
 use App\Tournament;
+use App\TournamentTeams;
 use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -39,6 +40,10 @@ class TournamentsLists extends Component
     public function setTeams($id){
         $tournament = Tournament::find($id);
         $this->emit("setTeams",[$tournament, $tournament->games]);
+    }
+
+    public function removeTeams($id){
+        return redirect()->route('removeTeamFromTournament', $id);
     }
 
 

@@ -64,31 +64,40 @@
                                     <span class="badge badge-pill badge-danger">Не активный</span>
                                 @endif
                             </div>
+                            <a class="dropdown-toggle mb-1" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="simple-icon-list"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" x-placement="left-start" style="position: absolute; transform: translate3d(0px, -150px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                <button type="button" class="dropdown-item"  data-toggle="modal" wire:click="setTeams({{$tournament->id}})" data-target="#readCompanyModal1">
+                                    Добавить команд
+                                </button>
+
+                                <button type="button" class="dropdown-item" wire:click="removeTeams({{$tournament->id}})">
+                                    Удалить команд
+                                </button>
+
+                                <button type="button" class="dropdown-item"  data-toggle="modal" wire:click="getInfo({{$tournament->id}})" data-target="#readCompanyModal">
+                                    Посмотреть
+                                </button>
+
+
+                                <button type="button" class="dropdown-item" data-toggle="modal"  data-target="#changeCompanyModal" wire:click="$emit('changeTournament',{{$tournament->id}})" >
+                                    Редактировать
+                                </button>
+
+
+                                <button type="button" class="dropdown-item" onclick="confirm('Вы уверены?') || event.stopImmediatePropagation()"  wire:click="deleteTournament({{$tournament->id}})">
+                                    Удалить турнир
+                                </button>
+                            </div>
                         </div>
                         {{--Companies Action--}}
-                        <div class="custom-control custom-checkbox pl-1 align-self-center pr-4">
-
-                            <button type="button" class="btn btn-outline-primary"  data-toggle="modal" wire:click="setTeams({{$tournament->id}})" data-target="#readCompanyModal1">
-                                <i class="simple-icon-plus"></i>
-                            </button>
-
-                            <button type="button" class="btn btn-outline-primary"  data-toggle="modal" wire:click="getInfo({{$tournament->id}})" data-target="#readCompanyModal">
-                                <i class="simple-icon-eye"></i>
-                            </button>
-
-
-                            <button type="button" class="btn btn-outline-primary" data-toggle="modal"  data-target="#changeCompanyModal" wire:click="$emit('changeTournament',{{$tournament->id}})" >
-                                <i class="iconsmind-Pencil"></i>
-                            </button>
-
-
-                            <button type="button" class="btn btn-outline-primary" onclick="confirm('Вы уверены?') || event.stopImmediatePropagation()"  wire:click="deleteTournament({{$tournament->id}})">
-                                <i class="simple-icon-trash"></i>
-                            </button>
+                        <div class="custom-control custom-checkbox pl-1 align-self-center pr-5">
 
                         </div>
                     </div>
                 </div>
+
             @endforeach
 
 

@@ -31,6 +31,9 @@ Route::group(['middleware' => 'Admin', 'namespace' => 'Admin', 'prefix' => 'admi
     Route::get('/', function (){return view('backend.dashboard');})->name('admin');
     Route::get("/teams","BackendController@teams")->name("backend-teams");
     Route::get("/tournaments","BackendController@tournaments")->name("backend-tournaments");
+    Route::layout('backend.layouts.layout')->section('content')->group(function () {
+        Route::livewire('/remove-team/{id}', 'tournaments.remove-team')->name('removeTeamFromTournament');
+    });
 });
 
 

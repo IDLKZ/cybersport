@@ -33,7 +33,7 @@
                     <nav class="breadcrumb-container d-none d-sm-block d-lg-inline-block" aria-label="breadcrumb">
                         <ol class="breadcrumb pt-0">
                             <li class="breadcrumb-item">
-                                <a href="/landlord">Главная</a>
+                                <a href="{{route('admin')}}">Главная</a>
                             </li>
                             <li class="breadcrumb-item">
                                 <a href="#" aria-current="page">Список турниров</a>
@@ -76,7 +76,7 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel1">Информация о турнире:</h5>
+                        <h5 class="modal-title" id="exampleModalLabel1">Добавить команд в турнир:</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
                             <span aria-hidden="true">&times;</span>
                         </button>
