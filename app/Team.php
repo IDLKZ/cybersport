@@ -40,7 +40,7 @@ class Team extends Model
         $team->team->email = $team->email;
         $team->team->phone = $team->phone;
         $team->team->secret_key = $team->secret_key;
-        $logo = !is_null($team->logo) ? SavePhoto::updatePhoto($team) : $team->team->logo;
+        $logo = !is_null($team->logo) ? SavePhoto::updatePhoto($team->team->logo,$team->logo,$team,"uploads/team/") : $team->team->logo;
         $team->team->logo = $logo;
         $team->team->slug = Str::slug($team->title);
         $team->team->captain = $team->captain;
