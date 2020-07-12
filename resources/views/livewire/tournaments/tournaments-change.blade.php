@@ -36,8 +36,8 @@
             <div class="form-group">
                 <h4>Статус</h4>
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1" name="status" wire:model = "status">
-                    <label class="custom-control-label show" style="font-size: 16px" for="customCheck1">Активный</label>
+                    <input type="checkbox" class="custom-control-input" id="customCheck2" name="status" wire:model = "status">
+                    <label class="custom-control-label show" style="font-size: 16px" for="customCheck2">Активный</label>
                 </div>
             </div>
             <div class="form-group">
