@@ -11,12 +11,8 @@
                 <div class="form-group">
                     <h4>Турнир</h4>
                     <select class="form-control" name="type" wire:model = "tournament_id">
-                        <option selected value="{{$match["tournament_id"]}}">{{$current["tournament"]}}</option>
-
                     @foreach($tournaments as $tournament)
-                            @if($tournament->id !== $match["tournament_id"])
-                            <option value="{{$tournament->id}}">{{$tournament->title}}</option>
-                            @endif
+                            <option {{$selected = $tournament->id !== $match["tournament_id"]? "selected" :"" }} value="{{$tournament->id}}">{{$tournament->title}}</option>
                         @endforeach
                     </select>
                     @error('tournament_id') <p class="text-danger"> {{$message}}</p>  @enderror
@@ -25,12 +21,8 @@
                 <div class="form-group">
                     <h4>Этап</h4>
                     <select class="form-control" name="type" wire:model = "step_id">
-                        <option selected value="{{$match["step_id"]}}">{{$current["step"]}}</option>
-
                     @foreach($steps as $step)
-                            @if($step->id !== $match["step_id"])
                             <option value="{{$step->id}}">{{$step->title}}</option>
-                            @endif
                         @endforeach
                     </select>
                     @error('step_id') <p class="text-danger"> {{$message}}</p>  @enderror
@@ -39,11 +31,8 @@
                 <div class="form-group">
                     <h4>Команда 1</h4>
                     <select class="form-control" name="type" wire:model = "team1">
-                        <option selected value="{{$match["team1"]}}">{{$current["team1"]}}</option>
                         @foreach($teams as $team)
-                            @if($team->id !== $match["team1"])
                             <option value="{{$team->id}}">{{$team->title}}</option>
-                            @endif
                         @endforeach
                     </select>
                     @error('team1') <p class="text-danger"> {{$message}}</p>  @enderror
@@ -54,9 +43,7 @@
                     <select class="form-control" name="type" wire:model = "team2">
                         <option selected value="{{$match["team2"]}}">{{$current["team2"]}}</option>
                         @foreach($teams as $team)
-                            @if($team->id !== $match["team2"])
                                 <option value="{{$team->id}}">{{$team->title}}</option>
-                            @endif
                         @endforeach
                     </select>
                     @error('team2') <p class="text-danger"> {{$message}}</p>  @enderror
@@ -69,9 +56,7 @@
                         <option selected value="{{$match["winner"]}}">{{$current["winner"]}}</option>
                         @endif
                         @foreach($teams as $team)
-                            @if($team->id !== $match["winner"])
                                 <option value="{{$team->id}}">{{$team->title}}</option>
-                            @endif
                         @endforeach
                     </select>
                     @error('winner') <p class="text-danger"> {{$message}}</p>  @enderror
