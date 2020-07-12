@@ -5,7 +5,7 @@
     <section class="page-title-area page-title-bg1">
         <div class="container">
             <div class="page-title-content">
-                <h1 title="3 in Row">3 in Row</h1>
+                <h1 title="Турниры">Турниры</h1>
             </div>
         </div>
     </section>
