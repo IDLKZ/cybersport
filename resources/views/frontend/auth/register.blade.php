@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
-                   <img src="assets/img/upcoming-tournaments-img1.jpg">
+                   <img src="assets/img/banner-img3.png">
                 </div>
             </div>
         </div>

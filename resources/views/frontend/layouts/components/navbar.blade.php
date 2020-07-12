@@ -35,17 +35,17 @@
 
                         <li class="nav-item"><a href="https://chat.whatsapp.com/D1UBTXKnB5E0qig2oSWKHx" class="nav-link">Поиск команд </a></li>
 
-                        <li class="nav-item"><a href="contact.html" class="nav-link">Контакты</a></li>
+                        <li class="nav-item"><a href="{{route("frontend-contacts")}}" class="nav-link">Контакты</a></li>
                     </ul>
 
-                    <div class="others-option d-flex align-items-center">
+{{--                    <div class="others-option d-flex align-items-center">--}}
 
-                        <div class="option-item">
-                            <div class="side-menu-btn">
-                                <i class="flaticon-null-2" data-toggle="modal" data-target="#sidebarModal"></i>
-                            </div>
-                        </div>
-                    </div>
+{{--                        <div class="option-item">--}}
+{{--                            <div class="side-menu-btn">--}}
+{{--                                <i class="flaticon-null-2" data-toggle="modal" data-target="#sidebarModal"></i>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
                 </div>
             </nav>
         </div>

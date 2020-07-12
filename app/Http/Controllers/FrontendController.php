@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Match;
 use App\News;
 use App\Team;
 use App\Tournament;
@@ -13,9 +14,14 @@ use Illuminate\Support\Str;
 class FrontendController extends Controller
 {
     public function index(){
+        $teams = Team::where("status",1)->get();
+
+        $oldmatch = Match::where("winner","!=",null)->orderBy("updated_at","desc")->paginate(4);
+        $newmatch = Match::where("winner",null)->orderBy("updated_at","desc")->paginate(4);
+        $allmatch = Match::orderBy("updated_at","desc")->paginate(4);
 
 
-        return view('frontend.home');
+        return view('frontend.home',compact("teams","oldmatch","newmatch","allmatch"));
     }
 
 
@@ -33,7 +39,7 @@ class FrontendController extends Controller
     }
 
     public function news(){
-        $news = News::orderBy('created_at',"asc")->paginate(6);
+        $news = News::orderBy('created_at',"desc")->paginate(6);
         return view("frontend.news",compact("news"));
     }
 
