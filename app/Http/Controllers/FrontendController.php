@@ -59,6 +59,12 @@ class FrontendController extends Controller
         return view('frontend.single-tournament', compact('tournament'));
     }
 
+    public function contacts(){
+        return view("frontend.contacts");
+    }
+
+
+
 
     public function createNews(){
         $link = "https://www.igromania.ru/news/";
