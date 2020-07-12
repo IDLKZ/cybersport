@@ -14,8 +14,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#companies">
-                        <i class="iconsmind-Building"></i> Игры
+                    <a href="{{route("backend-matches")}}">
+                        <i class="iconsmind-Flag"></i> Матчи
                     </a>
                 </li>
                 <li>

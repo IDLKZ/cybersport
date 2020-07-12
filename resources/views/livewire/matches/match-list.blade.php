@@ -62,16 +62,12 @@
 
                     <div class="pl-2 d-flex flex-grow-1 min-width-zero">
                         <div class="card-body align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero align-items-lg-center">
-{{--                            <a class="d-flex" href="#">--}}
-{{--                                <img data-toggle="modal" wire:click.prevent="getInfo({{$match->id}})" data-target="#readCompanyModal" src="{{$match->teams1->logo}}" class="list-thumbnail responsive border-0" />--}}
-{{--                            </a>--}}
-                            <a href="#" data-toggle="modal" wire:click.prevent="getInfo({{$match->id}})" data-target="#readCompanyModal" class="w-40 w-sm-100">
+
+                            <a   class="w-40 w-sm-100">
                                 <p class="list-item-heading mb-1 truncate">{{$match->teams1->title}}</p>
                             </a>
-{{--                            <a class="d-flex" href="#">--}}
-{{--                                <img data-toggle="modal" wire:click.prevent="getInfo({{$match->id}})" data-target="#readCompanyModal" src="{{$match->teams2->logo}}" class="list-thumbnail responsive border-0" />--}}
-{{--                            </a>--}}
-                            <a href="#" data-toggle="modal" wire:click.prevent="getInfo({{$match->id}})" data-target="#readCompanyModal" class="w-40 w-sm-100">
+
+                            <a  class="w-40 w-sm-100">
                                 <p class="list-item-heading mb-1 truncate">{{$match->teams2->title}}</p>
                             </a>
                             <p class="mb-1 text-muted text-small w-15 w-sm-100">{{$match->result}}</p>

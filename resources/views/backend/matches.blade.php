@@ -52,7 +52,7 @@
 
     <!-- Modal -->
         <div class="modal "  id="readCompanyModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog modal-md " role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Информация о матче:</h5>
@@ -66,23 +66,6 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
                         <button type="button" class="btn btn-primary">Понятно!</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {{--        End Modal--}}
-    <!-- Modal -->
-        <div class="modal "  id="readCompanyModal1" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel1">Информация о матче:</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-{{--                        @livewire('tournaments.set-team')--}}
                     </div>
                 </div>
             </div>

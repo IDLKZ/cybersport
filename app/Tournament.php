@@ -14,6 +14,18 @@ class Tournament extends Model
         return $this->hasOne(Game::class, 'id', 'game_id');
     }
 
+    public function tournament_teams(){
+        return $this->hasMany(TournamentTeams::class,"tournaments_id","id");
+    }
+
+    public function matches(){
+        return $this->hasMany(Match::class,"tournament_id","id");
+    }
+
+    public function tosses(){
+        return $this->hasMany(Toss::class,"tournament_id","id");
+    }
+
     public static function saveTournament($request){
         $tournament = new self();
         $tournament->title = $request->title;

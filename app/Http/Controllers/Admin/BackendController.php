@@ -14,4 +14,8 @@ class BackendController extends Controller
     public function tournaments(){
         return view("backend.tournaments");
     }
+
+    public function matches(){
+        return view("backend.matches");
+    }
 }
