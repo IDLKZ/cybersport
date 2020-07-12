@@ -26,7 +26,7 @@
 
                         <li class="nav-item"><a href="index-2.html#" class="nav-link">Статистика <i class="flaticon-down-arrow"></i></a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="stream-schedule.html" class="nav-link">Турниры</a></li>
+                                <li class="nav-item"><a href="{{route('frontend-tournaments')}}" class="nav-link">Турниры</a></li>
                                 <li class="nav-item"><a href="single-tournament.html" class="nav-link">Команды</a></li>
                             </ul>
                         </li>

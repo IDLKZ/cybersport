@@ -25,6 +25,8 @@ Route::get('/logout',"FrontendController@logout")->name('logout');
 Route::get("create-news","FrontendController@createNews");
 Route::get("news","FrontendController@news")->name('news');
 Route::get("news-detail/{slug}","FrontendController@news_detail");
+Route::get('/tournaments', 'FrontendController@tournaments')->name('frontend-tournaments');
+Route::get('/single-tournament/{slug}', 'FrontendController@singleTournament')->name('frontend-single-tournament');
 
 //Frontend end
 
