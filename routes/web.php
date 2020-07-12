@@ -29,6 +29,8 @@ Route::get('/tournaments', 'FrontendController@tournaments')->name('frontend-tou
 Route::get('/single-tournament/{slug}', 'FrontendController@singleTournament')->name('frontend-single-tournament');
 //Teams
 Route::get("/teams","FrontendController@teams")->name("frontend-teams");
+//Contacts
+Route::get("/contacts","FrontendController@contacts")->name("frontend-contacts");
 
 //Frontend end
 
