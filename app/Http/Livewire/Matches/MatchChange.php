@@ -12,7 +12,6 @@ class MatchChange extends Component
 {
     protected $listeners = ['changeMatch'];
     public $match;
-    public $current;
     public $tournament_id;
     public $step_id;
     public $team1;
@@ -37,18 +36,7 @@ class MatchChange extends Component
             $this->team2 = $this->match["team2"];
             $this->winner = $this->match["winner"];
             $match = $this->match;
-            if(!is_null($match)){
-                $tour = Tournament::find($match["tournament_id"]);
-                $curr = Step::find($match["step_id"]);
-                $team1 = Team::find($match["team1"]);
-                $team2 = Team::find($match["team2"]);
-                $winner = !is_null($match['winner']) ? Team::find($match["winner"]) : ['title' => null];
-                $this->current["tournament"] = $tour["title"];
-                $this->current["step"] = $curr["title"];
-                $this->current["team1"] = $team1["title"];
-                $this->current["team2"] = $team2["title"];
-                $this->current["winner"] = $winner["title"];
-            }
+
 
 
         }
@@ -90,10 +78,9 @@ class MatchChange extends Component
         $teams = Team::all();
         $steps = Step::all();
         $match = $this->match;
-        $current = $this->current;
 
 
-            return view('livewire.matches.match-change',compact("tournaments","teams","steps","match","current"));
+            return view('livewire.matches.match-change',compact("tournaments","teams","steps","match",));
 
 
 

@@ -3,7 +3,7 @@
 
 <div>
     <div class="modal-body">
-        @if(count($tournaments)>0 && count($teams)>0 && count($steps)>0 && !is_null($current))
+        @if(count($tournaments)>0 && count($teams)>0 && count($steps)>0)
 
             <form wire:submit.prevent="submit" enctype = 'multipart/form-data'>
 
@@ -41,7 +41,6 @@
                 <div class="form-group">
                     <h4>Команда 2</h4>
                     <select class="form-control" name="type" wire:model = "team2">
-                        <option selected value="{{$match["team2"]}}">{{$current["team2"]}}</option>
                         @foreach($teams as $team)
                                 <option value="{{$team->id}}">{{$team->title}}</option>
                         @endforeach
@@ -52,9 +51,6 @@
                 <div class="form-group">
                     <h4>Победитель</h4>
                     <select class="form-control" name="type" wire:model = "winner">
-                        @if(!is_null($current['winner']))
-                        <option selected value="{{$match["winner"]}}">{{$current["winner"]}}</option>
-                        @endif
                         @foreach($teams as $team)
                                 <option value="{{$team->id}}">{{$team->title}}</option>
                         @endforeach
