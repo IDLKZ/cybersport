@@ -50,7 +50,7 @@ class TournamentsLists extends Component
     public function deleteTournament($id){
         $tournament = Tournament::firstWhere('id', $id);
         Storage::disk("public")->delete($tournament["img"]);
-        foreach ($tournament->teams as $team) {
+        foreach ($tournament->tournament_teams as $team) {
             $team->delete();
         }
         $tournament->delete();
