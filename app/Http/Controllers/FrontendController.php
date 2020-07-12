@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\News;
 use App\Team;
+use App\Tournament;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\DomCrawler\Crawler;
@@ -44,6 +45,18 @@ class FrontendController extends Controller
     public function teams(){
         $teams = Team::where("status",1)->paginate(12);
         return view("frontend.teams",compact("teams"));
+    }
+
+    public function tournaments()
+    {
+        $tournaments = Tournament::where('status', 1)->get();
+        return view('frontend.tournaments', compact('tournaments'));
+    }
+
+    public function singleTournament($slug)
+    {
+        $tournament = Tournament::where('slug', $slug)->first();
+        return view('frontend.single-tournament', compact('tournament'));
     }
 
 
