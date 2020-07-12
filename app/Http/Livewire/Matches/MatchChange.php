@@ -23,12 +23,19 @@ class MatchChange extends Component
     public $start;
 
 
+
     public function changeMatch($id){
         if ($id){
+
             $this->match = Match::find($id);
             $this->result=$this->match["result"];
             $this->info=$this->match["info"];
             $this->start=$this->match["start"];
+            $this->tournament_id = $this->match["tournament_id"];
+            $this->step_id = $this->match["step_id"];
+            $this->team1 = $this->match["team1"];
+            $this->team2 = $this->match["team2"];
+            $this->winner = $this->match["winner"];
             $match = $this->match;
             if(!is_null($match)){
                 $tour = Tournament::find($match["tournament_id"]);
