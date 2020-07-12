@@ -80,8 +80,9 @@ class FrontendController extends Controller
 
     public function singleTournament($slug)
     {
-        $tournament = Tournament::where('slug', $slug)->get();
-        dd($tournament);
+        $tournament = Tournament::where('slug', $slug)->first();
+
+        return view('frontend.single-tournament', compact('tournament'));
     }
 
 }

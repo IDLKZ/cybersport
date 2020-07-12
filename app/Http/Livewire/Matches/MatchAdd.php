@@ -43,7 +43,7 @@ class MatchAdd extends Component
             'start'=>'required'
         ],[],['tournament_id'=>'турнир','step_id'=>'этап','team1'=>'первая команда', 'team2'=>'вторая команда', 'start' => 'начало турнира']);
         if (Match::saveMatch($this)){
-            return redirect()->back();
+            return redirect()->route('backend-matches');
         }
         else{
             abort(404);
