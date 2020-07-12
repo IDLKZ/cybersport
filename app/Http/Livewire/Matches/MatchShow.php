@@ -16,6 +16,6 @@ class MatchShow extends Component
 
     public function render()
     {
-        return view('livewire.matches.match-show',["data"=>$this->data]);
+        return view('livewire.matches.match-show');
     }
 }

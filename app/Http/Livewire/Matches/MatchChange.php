@@ -35,7 +35,7 @@ class MatchChange extends Component
                 $curr = Step::find($match["step_id"]);
                 $team1 = Team::find($match["team1"]);
                 $team2 = Team::find($match["team2"]);
-                $winner = Team::find($match["winner"]);
+                $winner = !is_null($match['winner']) ? Team::find($match["winner"]) : ['title' => null];
                 $this->current["tournament"] = $tour["title"];
                 $this->current["step"] = $curr["title"];
                 $this->current["team1"] = $team1["title"];

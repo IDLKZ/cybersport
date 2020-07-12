@@ -65,7 +65,9 @@
                 <div class="form-group">
                     <h4>Победитель</h4>
                     <select class="form-control" name="type" wire:model = "winner">
+                        @if(!is_null($current['winner']))
                         <option selected value="{{$match["winner"]}}">{{$current["winner"]}}</option>
+                        @endif
                         @foreach($teams as $team)
                             @if($team->id !== $match["winner"])
                                 <option value="{{$team->id}}">{{$team->title}}</option>

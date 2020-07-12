@@ -19,7 +19,9 @@ class Match extends Model
        return $this->hasOne(Team::class,"id","team2");
     }
     public function winners(){
-       return $this->hasOne(Team::class,"id","winner");
+       return $this->hasOne(Team::class,"id","winner")->withDefault(function ($model){
+           $model->title = 'Неизвестно';
+       });
     }
 
 
