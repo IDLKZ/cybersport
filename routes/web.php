@@ -28,6 +28,8 @@ Route::get("news-detail/{slug}","FrontendController@news_detail");
 Route::get('/tournaments', 'FrontendController@tournaments')->name('frontend-tournaments');
 Route::get('/single-tournament/{slug}', 'FrontendController@singleTournament')->name('frontend-single-tournament');
 
+Route::get("/teams","FrontendController@teams")->name("frontend-teams");
+
 //Frontend end
 
 Route::group(['middleware' => 'Admin', 'namespace' => 'Admin', 'prefix' => 'admin'], function (){

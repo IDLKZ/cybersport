@@ -17,7 +17,7 @@
                                 <p class="text-muted text-small mb-2">Команда 2:</p>
                                 <p class="mb-3">{{$data->teams2->title}}</p>
                                 <p class="text-muted text-small mb-2">Победитель:</p>
-                                <p class="mb-3">{{$data->winners->title}}</p>
+                                <p class="mb-3">{{$str = $data->winner == null ? $data->winners->title : "Неизвестно"}}</p>
                                 <p class="text-muted text-small mb-2">Начало:</p>
                                 <p class="mb-3">{{$data->start}}</p>
                                 <p class="text-muted text-small mb-2">Результат:</p>

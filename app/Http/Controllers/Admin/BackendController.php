@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 class BackendController extends Controller
 {
     public function teams(){
+
         return view("backend.teams");
     }
 
