@@ -20,10 +20,11 @@ class MatchAdd extends Component
     public $result;
     public $info;
     public $start;
-
+    public $teams;
 
 
     public function updated($field){
+
         $this->validateOnly($field,[
            "tournament_id"=>"required",
            "step_id"=>"required",
@@ -52,25 +53,40 @@ class MatchAdd extends Component
         }
     }
 
-    public function addTeam1($data)
+    public function getTeam($id)
     {
-        $this->winners['id1'] = $data['id'];
-        $this->winners['title1'] = $data['title'];
+        session(['id' => $id]);
+        $tournament = Tournament::find($id);
+        foreach ($tournament->tournament_teams as $tournament_team) {
+            foreach ($tournament_team->teams as $team) {
+                $this->teams[] = $team->toArray();
+            }
+        }
+
 
     }
-    public function addTeam2($data)
+
+
+
+    public function addTeam1($teamId, $title)
     {
-        $this->winners['id2'] = $data['id'];
-        $this->winners['title2'] = $data['title'];
+        $this->winners['id1'] = $teamId;
+        $this->winners['title1'] = $title;
+    }
+
+    public function addTeam2($id, $title)
+    {
+        $this->winners['id2'] = $id;
+        $this->winners['title2'] = $title;
     }
 
     public function render()
     {
 
         $tournaments = Tournament::where("status",1)->get();
-        $teams = Team::all();
+//        $teams = Team::all();
         $steps = Step::all();
 
-        return view('livewire.matches.match-add',compact("tournaments","teams","steps"));
+        return view('livewire.matches.match-add',compact("tournaments","steps"));
     }
 }

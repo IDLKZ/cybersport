@@ -52,7 +52,10 @@
                     </li>
                 </ul>
             </div>
-
+            <div class="section-title">
+                <span class="sub-title">Матчи</span>
+                {{--                <h2>Top ranking team</h2>--}}
+            </div>
             <div class="matches-tabs">
 
                 <div class="tab-content" id="myTabContent">
@@ -62,8 +65,11 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-5 col-md-12">
                                     <div class="matches-team">
-                                        <img src="{{$match->teams1->logo}}" alt="image">
-
+                                        @if(!is_null($match->teams1->logo))
+                                        <img src="{{$match->teams1->logo}}" style="width: 130px; height: 130px" alt="{{$match->teams1->title}}">
+                                        @else
+                                            <img src="/img/no-logo.png" alt="No_Logo" style="width: 130px; height: 130px">
+                                        @endif
                                         <div class="content">
                                             <h3>{{$match->teams1->title}}</h3>
 {{--                                            <ul class="watch-list">--}}
@@ -87,8 +93,11 @@
 
                                 <div class="col-lg-5 col-md-12">
                                     <div class="matches-team right-image">
-                                        <img src="{{$match->teams2->logo}}" alt="image">
-
+                                        @if(!is_null($match->teams2->logo))
+                                            <img src="{{$match->teams2->logo}}" style="width: 130px; height: 130px" alt="{{$match->teams2->title}}">
+                                        @else
+                                            <img src="/img/no-logo.png" alt="No_Logo" style="width: 130px; height: 130px">
+                                        @endif
                                         <div class="content">
                                             <h3>{{$match->teams2->title}}</h3>
 {{--                                            <ul class="watch-list">--}}
@@ -124,8 +133,11 @@
                     @foreach($item->teams as $team)
                         <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="single-top-team-item">
-                        <img src="{{$team->logo}}" alt="{{$team->title}}" style="width: 150px; height: 150px">
-                        <h3>{{$team->title}}</h3>
+                        @if(!is_null($team->logo))
+                            <img src="{{$team->logo}}" style="width: 130px; height: 130px" alt="{{$team->title}}">
+                        @else
+                            <img src="/img/no-logo.png" alt="No_Logo" style="width: 130px; height: 130px">
+                        @endif                        <h3>{{$team->title}}</h3>
 {{--                        <ul>--}}
 {{--                            <li><a href="single-tournament.html#" target="_blank"><i class='bx bxl-youtube'></i></a></li>--}}
 {{--                            <li><a href="single-tournament.html#" target="_blank"><i class='bx bxl-twitch'></i></a></li>--}}

@@ -1,7 +1,7 @@
 {{--Modal window to create Company--}}
 <div>
     <div class="modal-body">
-        @if(count($tournaments)>0 && count($teams)>0 && count($steps)>0)
+        @if(count($tournaments)>0 && count($steps)>0)
 
         <form wire:submit.prevent="submit" enctype = 'multipart/form-data'>
 
@@ -10,7 +10,7 @@
                 <h4>Турнир</h4>
                 <select class="form-control" name="type" wire:model = "tournament_id">
                     @foreach($tournaments as $tournament)
-                        <option value="{{$tournament->id}}">{{$tournament->title}}</option>
+                        <option wire:click="getTeam({{$tournament->id}})" value="{{$tournament->id}}">{{$tournament->title}}</option>
                     @endforeach
                 </select>
                 @error('tournament_id') <p class="text-danger"> {{$message}}</p>  @enderror
@@ -29,9 +29,11 @@
             <div class="form-group">
                 <h4>Команда 1</h4>
                 <select class="form-control" name="type" wire:model = "team1">
+                    @if(!is_null($teams))
                     @foreach($teams as $team)
-                        <option wire:click="addTeam1({{$team}})" value="{{$team->id}}">{{$team->title}}</option>
+                        <option wire:click="addTeam1({{$team['id']}}, '{{$team['title']}}')" value="{{$team['id']}}">{{$team['title']}}</option>
                     @endforeach
+                        @endif
                 </select>
                 @error('team1') <p class="text-danger"> {{$message}}</p>  @enderror
             </div>
@@ -39,9 +41,11 @@
             <div class="form-group">
                 <h4>Команда 2</h4>
                 <select class="form-control" name="type" wire:model = "team2">
+                    @if(!is_null($teams))
                     @foreach($teams as $team)
-                        <option wire:click="addTeam2({{$team}})" value="{{$team->id}}">{{$team->title}}</option>
+                        <option wire:click="addTeam2({{$team['id']}}, '{{$team['title']}}')" value="{{$team['id']}}">{{$team['title']}}</option>
                     @endforeach
+                        @endif
                 </select>
                 @error('team2') <p class="text-danger"> {{$message}}</p>  @enderror
             </div>
