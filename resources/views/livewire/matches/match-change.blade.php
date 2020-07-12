@@ -12,7 +12,7 @@
                     <h4>Турнир</h4>
                     <select class="form-control" name="type" wire:model = "tournament_id">
                     @foreach($tournaments as $tournament)
-                            <option {{$selected = $tournament->id !== $match["tournament_id"]? "selected" :"" }} value="{{$tournament->id}}">{{$tournament->title}}</option>
+                            <option value="{{$tournament->id}}">{{$tournament->title}}</option>
                         @endforeach
                     </select>
                     @error('tournament_id') <p class="text-danger"> {{$message}}</p>  @enderror

@@ -35,7 +35,6 @@ class MatchChange extends Component
             $this->team1 = $this->match["team1"];
             $this->team2 = $this->match["team2"];
             $this->winner = $this->match["winner"];
-            $match = $this->match;
 
 
 
@@ -77,10 +76,8 @@ class MatchChange extends Component
         $tournaments = Tournament::where("status",1)->get();
         $teams = Team::all();
         $steps = Step::all();
-        $match = $this->match;
 
-
-            return view('livewire.matches.match-change',compact("tournaments","teams","steps","match",));
+        return view('livewire.matches.match-change',compact("tournaments","teams","steps"));
 
 
 
