@@ -34,6 +34,8 @@ class MatchAdd extends Component
 
     }
 
+
+
     public function submit(){
         $this->validate([
             "tournament_id"=>"required",
@@ -54,6 +56,7 @@ class MatchAdd extends Component
     {
         $this->winners['id1'] = $data['id'];
         $this->winners['title1'] = $data['title'];
+
     }
     public function addTeam2($data)
     {

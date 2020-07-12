@@ -2,7 +2,9 @@
 
 namespace App\Http\Livewire\Teams;
 
+use App\Match;
 use App\Team;
+use App\TournamentTeams;
 use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -39,6 +41,15 @@ class TeamList extends Component
     public function deleteTeam($id){
         $team = Team::firstWhere('id', $id);
         Storage::disk("public")->delete($team["logo"]);
+        $tournaments = TournamentTeams::where("teams_id",$team->id)->get();
+        $matches = Match::where("team1",$id)->orWhere("team2",$id)->orWhere("winner",$id)->get();
+        foreach ($tournaments as $tournament){
+            $tournament->delete();
+        }
+        foreach ($matches as $match){
+            $match->delete();
+        }
+
         $team->delete();
     }
 

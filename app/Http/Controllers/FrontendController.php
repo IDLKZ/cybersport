@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\News;
-use App\Tournament;
+use App\Team;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\DomCrawler\Crawler;
@@ -12,6 +12,8 @@ use Illuminate\Support\Str;
 class FrontendController extends Controller
 {
     public function index(){
+
+
         return view('frontend.home');
     }
 
@@ -38,6 +40,12 @@ class FrontendController extends Controller
         $news = News::where("slug",$slug)->first();
         return view("frontend.news-detail",compact("news"));
     }
+
+    public function teams(){
+        $teams = Team::where("status",1)->paginate(12);
+        return view("frontend.teams",compact("teams"));
+    }
+
 
     public function createNews(){
         $link = "https://www.igromania.ru/news/";
@@ -72,17 +80,5 @@ class FrontendController extends Controller
     }
 
 
-    public function tournaments()
-    {
-        $tournaments = Tournament::where('status', 1)->get();
-        return view('frontend.tournaments', compact('tournaments'));
-    }
-
-    public function singleTournament($slug)
-    {
-        $tournament = Tournament::where('slug', $slug)->first();
-
-        return view('frontend.single-tournament', compact('tournament'));
-    }
 
 }

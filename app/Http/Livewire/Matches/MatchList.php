@@ -6,6 +6,7 @@ use App\Match;
 use App\Step;
 use App\Team;
 use App\Tournament;
+use App\TournamentTeams;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -27,6 +28,10 @@ class MatchList extends Component
 
     public function deleteMatch($id){
         $match = Match::firstWhere('id', $id);
+
+
+
+
         $match->delete();
     }
 

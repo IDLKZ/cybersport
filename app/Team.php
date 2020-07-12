@@ -16,6 +16,8 @@ class Team extends Model
     }
 
 
+
+
     public static function saveTeam($request){
         $team = new self();
         $team->title = $request->title;
