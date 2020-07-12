@@ -32,7 +32,7 @@
                     <h4>Команда 1</h4>
                     <select class="form-control" name="type" wire:model = "team1">
                         @foreach($teams as $team)
-                            <option value="{{$team->id}}">{{$team->title}}</option>
+                            <option wire:click="addTeam1({{$team}})" value="{{$team->id}}">{{$team->title}}</option>
                         @endforeach
                     </select>
                     @error('team1') <p class="text-danger"> {{$message}}</p>  @enderror
@@ -42,7 +42,7 @@
                     <h4>Команда 2</h4>
                     <select class="form-control" name="type" wire:model = "team2">
                         @foreach($teams as $team)
-                                <option value="{{$team->id}}">{{$team->title}}</option>
+                                <option wire:click="addTeam2({{$team}})" value="{{$team->id}}">{{$team->title}}</option>
                         @endforeach
                     </select>
                     @error('team2') <p class="text-danger"> {{$message}}</p>  @enderror
@@ -51,9 +51,12 @@
                 <div class="form-group">
                     <h4>Победитель</h4>
                     <select class="form-control" name="type" wire:model = "winner">
-                        @foreach($teams as $team)
-                                <option value="{{$team->id}}">{{$team->title}}</option>
-                        @endforeach
+                            @if(isset($winners['id1']))
+                                <option value="{{$winners['id1']}}">{{$winners['title1']}}</option>
+                            @endif
+                            @if(isset($winners['id2']))
+                                <option value="{{$winners['id2']}}">{{$winners['title2']}}</option>
+                            @endif
                     </select>
                     @error('winner') <p class="text-danger"> {{$message}}</p>  @enderror
                 </div>
