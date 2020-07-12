@@ -66,12 +66,12 @@
 
                                         <div class="content">
                                             <h3>{{$match->teams1->title}}</h3>
-                                            <ul class="watch-list">
-                                                <li><span>Watch</span></li>
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on YouTube"><i class='bx bxl-youtube'></i></a></li>
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on Twitch"><i class='bx bxl-twitch'></i></a></li>
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on Vimeo"><i class='bx bxl-vimeo'></i></a></li>
-                                            </ul>
+{{--                                            <ul class="watch-list">--}}
+{{--                                                <li><span>Watch</span></li>--}}
+{{--                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on YouTube"><i class='bx bxl-youtube'></i></a></li>--}}
+{{--                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on Twitch"><i class='bx bxl-twitch'></i></a></li>--}}
+{{--                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on Vimeo"><i class='bx bxl-vimeo'></i></a></li>--}}
+{{--                                            </ul>--}}
                                         </div>
                                     </div>
                                 </div>
@@ -91,12 +91,12 @@
 
                                         <div class="content">
                                             <h3>{{$match->teams2->title}}</h3>
-                                            <ul class="watch-list">
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on YouTube"><i class='bx bxl-youtube'></i></a></li>
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on Twitch"><i class='bx bxl-twitch'></i></a></li>
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on Vimeo"><i class='bx bxl-vimeo'></i></a></li>
-                                                <li><span>Watch</span></li>
-                                            </ul>
+{{--                                            <ul class="watch-list">--}}
+{{--                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on YouTube"><i class='bx bxl-youtube'></i></a></li>--}}
+{{--                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on Twitch"><i class='bx bxl-twitch'></i></a></li>--}}
+{{--                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on Vimeo"><i class='bx bxl-vimeo'></i></a></li>--}}
+{{--                                                <li><span>Watch</span></li>--}}
+{{--                                            </ul>--}}
                                         </div>
                                     </div>
                                 </div>
