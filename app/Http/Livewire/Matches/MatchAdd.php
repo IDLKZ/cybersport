@@ -34,6 +34,8 @@ class MatchAdd extends Component
 
     }
 
+
+
     public function submit(){
         $this->validate([
             "tournament_id"=>"required",
