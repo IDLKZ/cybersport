@@ -57,14 +57,15 @@
 
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="all-matches" role="tabpanel">
-                        <div class="single-matches-box">
+                        @foreach($tournament->matches as $match)
+                            <div class="single-matches-box">
                             <div class="row align-items-center">
                                 <div class="col-lg-5 col-md-12">
                                     <div class="matches-team">
-                                        <img src="assets/img/team1.png" alt="image">
+                                        <img src="{{$match->teams1->logo}}" alt="image">
 
                                         <div class="content">
-                                            <h3>Fierce</h3>
+                                            <h3>{{$match->teams1->title}}</h3>
                                             <ul class="watch-list">
                                                 <li><span>Watch</span></li>
                                                 <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on YouTube"><i class='bx bxl-youtube'></i></a></li>
@@ -78,19 +79,18 @@
                                 <div class="col-lg-2 col-md-12">
                                     <div class="matches-result">
                                         <ul>
-                                            <li>9</li>
-                                            <li>14</li>
+                                            <li>{{!is_null($match->result) ? $match->result : '0:0'}}</li>
                                         </ul>
-                                        <span class="date-time">20TH May 2020, 23:00</span>
+                                        <span class="date-time">{{$match->start}}</span>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-5 col-md-12">
                                     <div class="matches-team right-image">
-                                        <img src="assets/img/team2.png" alt="image">
+                                        <img src="{{$match->teams2->logo}}" alt="image">
 
                                         <div class="content">
-                                            <h3>Devlis</h3>
+                                            <h3>{{$match->teams2->title}}</h3>
                                             <ul class="watch-list">
                                                 <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on YouTube"><i class='bx bxl-youtube'></i></a></li>
                                                 <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on Twitch"><i class='bx bxl-twitch'></i></a></li>
@@ -102,144 +102,7 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="single-matches-box">
-                            <div class="row align-items-center">
-                                <div class="col-lg-5 col-md-12">
-                                    <div class="matches-team">
-                                        <img src="assets/img/team3.png" alt="image">
-
-                                        <div class="content">
-                                            <h3>Skullking</h3>
-                                            <ul class="watch-list">
-                                                <li><span>Watch</span></li>
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on YouTube"><i class='bx bxl-youtube'></i></a></li>
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on Twitch"><i class='bx bxl-twitch'></i></a></li>
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on Vimeo"><i class='bx bxl-vimeo'></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-2 col-md-12">
-                                    <div class="matches-result">
-                                        <ul>
-                                            <li>10</li>
-                                            <li>8</li>
-                                        </ul>
-                                        <span class="date-time">19TH May 2020, 22:00</span>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-5 col-md-12">
-                                    <div class="matches-team right-image">
-                                        <img src="assets/img/team4.png" alt="image">
-
-                                        <div class="content">
-                                            <h3>Gurdian</h3>
-                                            <ul class="watch-list">
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on YouTube"><i class='bx bxl-youtube'></i></a></li>
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on Twitch"><i class='bx bxl-twitch'></i></a></li>
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on Vimeo"><i class='bx bxl-vimeo'></i></a></li>
-                                                <li><span>Watch</span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="single-matches-box">
-                            <div class="row align-items-center">
-                                <div class="col-lg-5 col-md-12">
-                                    <div class="matches-team">
-                                        <img src="assets/img/team5.png" alt="image">
-
-                                        <div class="content">
-                                            <h3>Rover</h3>
-                                            <ul class="watch-list">
-                                                <li><span>Watch</span></li>
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on YouTube"><i class='bx bxl-youtube'></i></a></li>
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on Twitch"><i class='bx bxl-twitch'></i></a></li>
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on Vimeo"><i class='bx bxl-vimeo'></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-2 col-md-12">
-                                    <div class="matches-result">
-                                        <ul>
-                                            <li>10</li>
-                                            <li>10</li>
-                                        </ul>
-                                        <span class="date-time">18TH May 2020, 21:00</span>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-5 col-md-12">
-                                    <div class="matches-team right-image">
-                                        <img src="assets/img/team6.png" alt="image">
-
-                                        <div class="content">
-                                            <h3>Gleopsis</h3>
-                                            <ul class="watch-list">
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on YouTube"><i class='bx bxl-youtube'></i></a></li>
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on Twitch"><i class='bx bxl-twitch'></i></a></li>
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on Vimeo"><i class='bx bxl-vimeo'></i></a></li>
-                                                <li><span>Watch</span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="single-matches-box">
-                            <div class="row align-items-center">
-                                <div class="col-lg-5 col-md-12">
-                                    <div class="matches-team">
-                                        <img src="assets/img/team7.png" alt="image">
-
-                                        <div class="content">
-                                            <h3>Solider</h3>
-                                            <ul class="watch-list">
-                                                <li><span>Watch</span></li>
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on YouTube"><i class='bx bxl-youtube'></i></a></li>
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on Twitch"><i class='bx bxl-twitch'></i></a></li>
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on Vimeo"><i class='bx bxl-vimeo'></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-2 col-md-12">
-                                    <div class="matches-result">
-                                        <ul>
-                                            <li>14</li>
-                                            <li>15</li>
-                                        </ul>
-                                        <span class="date-time">17TH May 2020, 24:00</span>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-5 col-md-12">
-                                    <div class="matches-team right-image">
-                                        <img src="assets/img/team8.png" alt="image">
-
-                                        <div class="content">
-                                            <h3>Roosgun</h3>
-                                            <ul class="watch-list">
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on YouTube"><i class='bx bxl-youtube'></i></a></li>
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on Twitch"><i class='bx bxl-twitch'></i></a></li>
-                                                <li><a href="single-tournament.html#" target="_blank" data-toggle="tooltip" data-placement="top" title="Watch on Vimeo"><i class='bx bxl-vimeo'></i></a></li>
-                                                <li><span>Watch</span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
 
                 </div>
