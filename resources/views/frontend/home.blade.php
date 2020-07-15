@@ -9,7 +9,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-md-12">
                         <div class="main-banner-content">
-                            <span class="sub-title">Наслаждайся игрой!</span>
+                            <span class="sub-title">Наслаждайся игрой!!!</span>
                             <div class="logo">
                                 <img src="assets/img/zelda.png" alt="image">
                             </div>
