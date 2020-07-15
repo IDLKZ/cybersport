@@ -16,7 +16,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="{{route('main')}}">
-                    <img src="assets/img/logo.png" alt="logo">
+                    <img src="assets/img/weplay.png" alt="logo">
                 </a>
 
                 <div class="collapse navbar-collapse mean-menu">
@@ -24,7 +24,7 @@
 
                         <li class="nav-item"><a href="{{route('news')}}" class="nav-link">Новости </a></li>
 
-                        <li class="nav-item"><a href="index-2.html#" class="nav-link">Статистика <i class="flaticon-down-arrow"></i></a>
+                        <li class="nav-item"><a href="#" onclick="return false" class="nav-link">Статистика <i class="flaticon-down-arrow"></i></a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a href="{{route('frontend-tournaments')}}" class="nav-link">Турниры</a></li>
                                 <li class="nav-item"><a href="{{route("frontend-teams")}}" class="nav-link">Команды</a></li>
@@ -33,8 +33,12 @@
 
                         <li class="nav-item"><a href="{{route('register')}}" class="nav-link">Участие в турнирах</a></li>
 
-                        <li class="nav-item"><a href="https://chat.whatsapp.com/D1UBTXKnB5E0qig2oSWKHx" class="nav-link">Поиск команд </a></li>
-
+                        <li class="nav-item"><a href="#" onclick="return false" class="nav-link">Поиск команд<i class="flaticon-down-arrow"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="https://chat.whatsapp.com/D1UBTXKnB5E0qig2oSWKHx" class="nav-link">DOTA 2</a></li>
+                                <li class="nav-item"><a href="https://chat.whatsapp.com/EslbbZycZxXFvQthyc51kV" class="nav-link">CS:GO</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item"><a href="{{route("frontend-contacts")}}" class="nav-link">Контакты</a></li>
                     </ul>
 

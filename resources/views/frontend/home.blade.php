@@ -9,11 +9,11 @@
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-md-12">
                         <div class="main-banner-content">
-                            <span class="sub-title">Наслаждайся игрой!!!</span>
-                            <div class="logo">
-                                <img src="assets/img/zelda.png" alt="image">
-                            </div>
-                            <h6>Активные турниры!</h6>
+{{--                            <span class="sub-title">Наслаждайся игрой!</span>--}}
+{{--                            <div class="logo">--}}
+                                <img src="assets/img/zelda.png" style="margin-top: 20px" alt="image">
+{{--                            </div>--}}
+                            <h1 style="font-size: 55px;margin-left: 7px">KAZAKHSTAN</h1>
                             <div class="btn-box">
                                 <a href="{{route("register")}}" class="default-btn">Участвовать!</a>
                                 <a href="{{route("frontend-tournaments")}}" class="optional-btn">Турниры!</a>
@@ -23,7 +23,7 @@
 
                     <div class="col-lg-7 col-md-12">
                         <div class="main-banner-image">
-                            <img src="assets/img/banner-img1.png" alt="image">
+{{--                            <img src="assets/img/banner-img1.png" alt="image">--}}
                         </div>
                     </div>
                 </div>
