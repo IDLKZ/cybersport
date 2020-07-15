@@ -35,8 +35,8 @@
                                 <i class="flaticon-24-hours"></i>
                             </div>
                             <h3>Контактные данные</h3>
-                            <p>Телефон: <a href="tel:+44457895789">(+44) - 45789 - 5789</a></p>
-                            <p>Почта: <a href="mailto:hello@zelda.com">hello@zelda.com</a></p>
+                            <p>Телефон: <a href="tel:+77064142427">(+7)706 414 24-27</a></p>
+                            <p>Почта: <a href="mailto:hello@zelda.com">info@weplay.kz</a></p>
                         </li>
                         <li>
                             <div class="icon">
@@ -44,12 +44,14 @@
                             </div>
                             <h3>Мы в соц. сетях</h3>
                             <div class="social-box">
-                                <a href="#" target="_blank"><i class="bx bxl-twitch"></i></a>
-                                <a href="#" target="_blank"><i class="bx bxl-facebook"></i></a>
-                                <a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
-                                <a href="#" target="_blank"><i class="bx bxl-youtube"></i></a>
-                                <a href="#" target="_blank"><i class="bx bxl-instagram"></i></a>
-                                <a href="#" target="_blank"><i class="bx bxl-vimeo"></i></a>
+{{--                                <a href="#" target="_blank"><i class="bx bxl-twitch"></i></a>--}}
+{{--                                <a href="#" target="_blank"><i class="bx bxl-facebook"></i></a>--}}
+{{--                                <a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>--}}
+                                <a href="https://www.youtube.com/channel/UCqRdjhqA6sXt0RD2wwWv1dw?view_as=subscriber" target="_blank"><i class="bx bxl-youtube"></i></a>
+                                <a href="https://instagram.com/weplay_kz?igshid=1avjhv8gaqnkq" target="_blank"><i class="bx bxl-instagram"></i></a>
+                                <a href="https://wa.me/77064142427" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+                                <a href="https://t.me/weplaykz" target="_blank"><i class="bx bxl-telegram"></i></a>
+{{--                                <a href="#" target="_blank"><i class="bx bxl-vimeo"></i></a>--}}
                             </div>
                         </li>
                     </ul>

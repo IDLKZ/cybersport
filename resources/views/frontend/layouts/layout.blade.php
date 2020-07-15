@@ -11,9 +11,9 @@
     @livewireStyles
 
 
-    <title>Zelda - eSports & Gaming Template</title>
+    <title>WePlay Впервые в Казахстане!</title>
 
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
 </head>
 
 <body>

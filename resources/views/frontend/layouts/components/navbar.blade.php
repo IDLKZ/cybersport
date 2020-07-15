@@ -16,7 +16,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="{{route('main')}}">
-                    <img src="assets/img/weplay.png" width="120" height="120" alt="logo">
+                    <img src="assets/img/weplay.png" width="100" height="100" alt="logo">
                 </a>
 
                 <div class="collapse navbar-collapse mean-menu">

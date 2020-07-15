@@ -11,48 +11,20 @@
                 <h2>Оставайся с нами</h2>
             </div>
 
-            <div class="row">
-                <div class="col-lg-2 col-sm-4 col-md-4 col-6">
-                    <div class="single-social-box">
-                        <div class="content">
-                            <i class='bx bxl-twitch'></i>
-                            Twitch
-                        </div>
-                        <div class="shape">
-                            <img src="assets/img/social-shape1.png" alt="image">
-                            <img src="assets/img/social-shape2.png" alt="image">
-                        </div>
-                        <a href="#" target="_blank" class="link-btn"></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-sm-4 col-md-4 col-6">
-                    <div class="single-social-box">
-                        <div class="content">
-                            <i class='bx bxl-facebook'></i>
-                            Facebook
-                        </div>
-                        <div class="shape">
-                            <img src="assets/img/social-shape1.png" alt="image">
-                            <img src="assets/img/social-shape3.png" alt="image">
-                        </div>
-                        <a href="#" target="_blank" class="link-btn"></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-sm-4 col-md-4 col-6">
-                    <div class="single-social-box">
-                        <div class="content">
-                            <i class='bx bxl-twitter'></i>
-                            Twitter
-                        </div>
-                        <div class="shape">
-                            <img src="assets/img/social-shape1.png" alt="image">
-                            <img src="assets/img/social-shape4.png" alt="image">
-                        </div>
-                        <a href="#" target="_blank" class="link-btn"></a>
-                    </div>
-                </div>
+            <div class="row justify-content-center">
+{{--                <div class="col-lg-2 col-sm-4 col-md-4 col-6">--}}
+{{--                    <div class="single-social-box">--}}
+{{--                        <div class="content">--}}
+{{--                            <i class='bx bxl-twitch'></i>--}}
+{{--                            Twitch--}}
+{{--                        </div>--}}
+{{--                        <div class="shape">--}}
+{{--                            <img src="assets/img/social-shape1.png" alt="image">--}}
+{{--                            <img src="assets/img/social-shape2.png" alt="image">--}}
+{{--                        </div>--}}
+{{--                        <a href="#" target="_blank" class="link-btn"></a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
                 <div class="col-lg-2 col-sm-4 col-md-4 col-6">
                     <div class="single-social-box">
@@ -85,8 +57,22 @@
                 <div class="col-lg-2 col-sm-4 col-md-4 col-6">
                     <div class="single-social-box">
                         <div class="content">
-                            <i class='bx bxl-vimeo'></i>
-                            Vimeo
+                            <i class='bx bxl-whatsapp'></i>
+                            WhatsApp
+                        </div>
+                        <div class="shape">
+                            <img src="assets/img/social-shape1.png" alt="image">
+                            <img src="assets/img/social-shape7.png" alt="image">
+                        </div>
+                        <a href="#" target="_blank" class="link-btn"></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-sm-4 col-md-4 col-6">
+                    <div class="single-social-box">
+                        <div class="content">
+                            <i class='bx bxl-telegram'></i>
+                            Telegram
                         </div>
                         <div class="shape">
                             <img src="assets/img/social-shape1.png" alt="image">
@@ -105,7 +91,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="logo">
-                    <a href="" class="d-inline-block"><img src="assets/img/logo.png" alt="image"></a>
+                    <a href="" class="d-inline-block"><img style="margin-bottom: 40px" src="assets/img/weplay.png" width="82" height="82" alt="image"></a>
+                    <span style="font-size: 58px">WePlay Kazakhstan</span>
                     <ul class="footer-menu">
                         <li class="nav-item"><a class="nav-link" href="/">Главная</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{route("frontend-tournaments")}}">Турниры</a></li>
