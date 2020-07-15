@@ -30,59 +30,59 @@
             </div>
         </div>
 
-        <div class="single-banner-item banner-bg2 jarallax" data-jarallax='{"speed": 0.3}'>
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 col-md-12">
-                        <div class="main-banner-content">
-                            <span class="sub-title">Выигрыши и конкурсы</span>
-                            <div class="logo">
-                                <img src="assets/img/zelda.png" alt="image">
-                            </div>
-                            <h6>Всегда интересные конкурсы и выигрыши!</h6>
-                            <div class="btn-box">
-                                <a href="{{route("register")}}" class="default-btn">Участвовать!</a>
-                                <a href="{{route("frontend-tournaments")}}" class="optional-btn">Турниры!</a>
+{{--        <div class="single-banner-item banner-bg2 jarallax" data-jarallax='{"speed": 0.3}'>--}}
+{{--            <div class="container-fluid">--}}
+{{--                <div class="row align-items-center">--}}
+{{--                    <div class="col-lg-5 col-md-12">--}}
+{{--                        <div class="main-banner-content">--}}
+{{--                            <span class="sub-title">Выигрыши и конкурсы</span>--}}
+{{--                            <div class="logo">--}}
+{{--                                <img src="assets/img/zelda.png" alt="image">--}}
+{{--                            </div>--}}
+{{--                            <h6>Всегда интересные конкурсы и выигрыши!</h6>--}}
+{{--                            <div class="btn-box">--}}
+{{--                                <a href="{{route("register")}}" class="default-btn">Участвовать!</a>--}}
+{{--                                <a href="{{route("frontend-tournaments")}}" class="optional-btn">Турниры!</a>--}}
 
-                            </div>
-                        </div>
-                    </div>
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
-                    <div class="col-lg-7 col-md-12">
-                        <div class="main-banner-image">
-                            <img src="assets/img/banner-img2.png" alt="image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+{{--                    <div class="col-lg-7 col-md-12">--}}
+{{--                        <div class="main-banner-image">--}}
+{{--                            <img src="assets/img/banner-img2.png" alt="image">--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
 
-        <div class="single-banner-item banner-bg3 jarallax" data-jarallax='{"speed": 0.3}'>
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 col-md-12">
-                        <div class="main-banner-content">
-                            <span class="sub-title">Присоединяйся к нам прямо сейчас!</span>
-                            <div class="logo">
-                                <img src="assets/img/zelda.png" alt="image">
-                            </div>
-                            <h6>Всегда рады вас видеть!</h6>
-                            <div class="btn-box">
-                                <a href="{{route("register")}}" class="default-btn">Участвовать!</a>
-                                <a href="{{route("frontend-tournaments")}}" class="optional-btn">Турниры!</a>
+{{--        <div class="single-banner-item banner-bg3 jarallax" data-jarallax='{"speed": 0.3}'>--}}
+{{--            <div class="container-fluid">--}}
+{{--                <div class="row align-items-center">--}}
+{{--                    <div class="col-lg-5 col-md-12">--}}
+{{--                        <div class="main-banner-content">--}}
+{{--                            <span class="sub-title">Присоединяйся к нам прямо сейчас!</span>--}}
+{{--                            <div class="logo">--}}
+{{--                                <img src="assets/img/zelda.png" alt="image">--}}
+{{--                            </div>--}}
+{{--                            <h6>Всегда рады вас видеть!</h6>--}}
+{{--                            <div class="btn-box">--}}
+{{--                                <a href="{{route("register")}}" class="default-btn">Участвовать!</a>--}}
+{{--                                <a href="{{route("frontend-tournaments")}}" class="optional-btn">Турниры!</a>--}}
 
-                            </div>
-                        </div>
-                    </div>
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
-                    <div class="col-lg-7 col-md-12">
-                        <div class="main-banner-image">
-                            <img src="assets/img/banner-img3.png" alt="image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+{{--                    <div class="col-lg-7 col-md-12">--}}
+{{--                        <div class="main-banner-image">--}}
+{{--                            <img src="assets/img/banner-img3.png" alt="image">--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
     </div>
     <!-- End Main Banner Area -->
 

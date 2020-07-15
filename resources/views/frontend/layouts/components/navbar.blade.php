@@ -5,7 +5,7 @@
             <div class="zelda-responsive-menu">
                 <div class="logo">
                     <a href="index-2.html">
-                        <img src="assets/img/logo.png" alt="logo">
+                        <img src="assets/img/weplay.png" width="53" height="53" alt="logo">
                     </a>
                 </div>
             </div>
@@ -16,7 +16,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="{{route('main')}}">
-                    <img src="assets/img/weplay.png" alt="logo">
+                    <img src="assets/img/weplay.png" width="120" height="120" alt="logo">
                 </a>
 
                 <div class="collapse navbar-collapse mean-menu">
@@ -57,13 +57,13 @@
 
     <div class="others-option-for-responsive">
         <div class="container">
-            <div class="dot-menu" data-toggle="modal" data-target="#sidebarModal">
-                <div class="inner">
-                    <div class="circle circle-one"></div>
-                    <div class="circle circle-two"></div>
-                    <div class="circle circle-three"></div>
-                </div>
-            </div>
+{{--            <div class="dot-menu" data-toggle="modal" data-target="#sidebarModal">--}}
+{{--                <div class="inner">--}}
+{{--                    <div class="circle circle-one"></div>--}}
+{{--                    <div class="circle circle-two"></div>--}}
+{{--                    <div class="circle circle-three"></div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
 {{--            <div class="container">--}}
 {{--                <div class="option-inner">--}}
