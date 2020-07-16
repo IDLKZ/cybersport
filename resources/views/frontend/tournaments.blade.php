@@ -24,7 +24,7 @@
 
                                     <div class="post-content">
                                         <ul class="post-meta">
-                                            <li>{{$tournament->info}}</li>
+{{--                                            <li>{{$tournament->info}}</li>--}}
                                             <li>{{$tournament->start}}</li>
                                             <li>{{$tournament->games->title}}</li>
                                         </ul>
