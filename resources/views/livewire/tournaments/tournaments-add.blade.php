@@ -37,10 +37,9 @@
                     <label class="custom-control-label show" style="font-size: 16px" for="customCheck1">Активный</label>
                 </div>
             </div>
-            <div class="custom-file">
+            <div class="form-group">
                 <h4>Картинка турнира</h4>
-                <input type="file" id="inputGroupFile01" class="custom-file-input" name="img" wire:model="img">
-                <label style="font-size: 16px" class="custom-file-label" for="inputGroupFile01">Выбрать файл</label>
+                <input type="file" class="form-control" name="img" wire:model="img">
                 @error('img') <p class="text-danger"> {{$message}}</p>  @enderror
             </div>
             <div class="modal-footer">
