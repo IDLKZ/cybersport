@@ -67,6 +67,13 @@
 
         </div>
 
+        <div class="form-group">
+            <label>Взнос команды для участия в турнире 10.000тг!</label>
+        </div>
+        <div class="form-group">
+            <label>По всем вопросам можете обратиться</label>
+            <a href="https://wa.me/77064142427" target="_blank"><i class="bx bxl-whatsapp"></i>+7 706 414 24-27</a>
+        </div>
 
         <button type="submit">Зарегистрироваться</button>
     </form>
