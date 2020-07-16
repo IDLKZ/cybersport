@@ -36,7 +36,7 @@
                             <img src="assets/img/social-shape1.png" alt="image">
                             <img src="assets/img/social-shape5.png" alt="image">
                         </div>
-                        <a href="#" target="_blank" class="link-btn"></a>
+                        <a href="https://www.youtube.com/channel/UCqRdjhqA6sXt0RD2wwWv1dw?view_as=subscriber" target="_blank" class="link-btn"></a>
                     </div>
                 </div>
 
@@ -50,7 +50,7 @@
                             <img src="assets/img/social-shape1.png" alt="image">
                             <img src="assets/img/social-shape6.png" alt="image">
                         </div>
-                        <a href="#" target="_blank" class="link-btn"></a>
+                        <a href="https://instagram.com/weplay_kz?igshid=1avjhv8gaqnkq" target="_blank" class="link-btn"></a>
                     </div>
                 </div>
 
@@ -64,7 +64,7 @@
                             <img src="assets/img/social-shape1.png" alt="image">
                             <img src="assets/img/social-shape7.png" alt="image">
                         </div>
-                        <a href="#" target="_blank" class="link-btn"></a>
+                        <a href="https://wa.me/77064142427" target="_blank" class="link-btn"></a>
                     </div>
                 </div>
 
@@ -78,7 +78,7 @@
                             <img src="assets/img/social-shape1.png" alt="image">
                             <img src="assets/img/social-shape7.png" alt="image">
                         </div>
-                        <a href="#" target="_blank" class="link-btn"></a>
+                        <a href="https://t.me/weplaykz" target="_blank" class="link-btn"></a>
                     </div>
                 </div>
             </div>
