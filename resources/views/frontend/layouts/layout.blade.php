@@ -58,6 +58,11 @@
 
 <!-- Links of JS files -->
 <script src="assets/js/frontend.js"></script>
+<script>
+    function checkEvent() {
+        fbq('track', 'CompleteRegistration');
+    }
+</script>
 @livewireScripts
 </body>
 </html>
