@@ -75,6 +75,18 @@
             <a href="https://wa.me/77064142427" target="_blank"><i class="bx bxl-whatsapp"></i>+7 706 414 24-27</a>
         </div>
 
-        <button type="submit">Зарегистрироваться</button>
+        <button type="submit" onclick="checkEvent()">Зарегистрироваться</button>
     </form>
 </div>
+
+@push('scripts')
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+
+            function checkEvent() {
+                fbq('track', 'CompleteRegistration');
+            }
+
+        })
+    </script>
+@endpush
