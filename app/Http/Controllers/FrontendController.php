@@ -10,6 +10,7 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\DomCrawler\Crawler;
 use Illuminate\Support\Str;
+use Twilio\Rest\Client;
 
 class FrontendController extends Controller
 {
@@ -23,6 +24,28 @@ class FrontendController extends Controller
 
         return view('frontend.home',compact("teams","oldmatch","newmatch","allmatch"));
     }
+
+    public function whatsapp()
+    {
+        // Find your Account Sid and Auth Token at twilio.com/console
+// DANGER! This is insecure. See http://twil.io/secure
+        $sid    = "ACc7b8e2d596891efbe3f1e065db1fb0aa";
+        $token  = "ac12ceb66d1a0e2369df17e4278730ad";
+        $twilio = new Client($sid, $token);
+
+        $numbers = ['+77064171796', '+77758495961'];
+
+        foreach ($numbers as $number){
+            $message = $twilio->messages
+                ->create($number, // to
+                    ["from" => "+15017122661", "body" => "Hello World!"]
+                );
+        }
+
+
+        print($message->sid);
+    }
+
 
 
     public function login(){

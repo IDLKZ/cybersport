@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 //Frontend start
 Route::get('/', "FrontendController@index" )->name('main');
+Route::get('/whatsapp-send', 'FrontendController@whatsapp');
+
 
 //Auth group - Login, Register , Logout
 Route::get('/0.0.0.0', "FrontendController@login")->name("login");
